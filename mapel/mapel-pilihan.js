@@ -1,5 +1,5 @@
 const materi = {
-  judul: "KK3 Sistem Kontrol Motor Stepper dengan PLC",
+  judul: "Mapel Pilihan Robotika Sistem Kontrol Motor Stepper dengan PLC",
   deskripsi: "Materi ini membahas tentang sistem kontrol motor stepper menggunakan PLC, perhitungan langkah motor stepper, aplikasi motor stepper dalam industri, dan troubleshooting pada sistem motor stepper."
 };
 
