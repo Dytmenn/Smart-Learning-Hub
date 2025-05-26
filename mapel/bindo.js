@@ -1,6 +1,67 @@
 const materi = {
   judul: "Bahasa Indonesia: Karya Ilmiah dan Drama",
-  deskripsi: "Materi ini membahas konsep karya ilmiah (pengertian, ciri-ciri, struktur, dan penyusunannya) serta unsur-unsur drama sebagai bagian dari karya sastra."
+  deskripsi: ` Materi ini membahas konsep karya ilmiah dan drama.
+  
+    **KARYA ILMIAH**: 
+    Karya ilmiah adalah tulisan yang berisi pembahasan suatu masalah berdasarkan hasil pengamatan, penelitian, atau kajian, yang disusun menurut metode ilmiah dan menggunakan bahasa baku. 
+
+    **Ciri-ciri karya ilmiah**:
+    1. Disusun secara sistematis.
+    2. Menggunakan bahasa formal dan baku.
+    3. Berdasarkan fakta dan data yang objektif.
+    4. Bersifat logis, rasional, dan empiris.
+    5. Mengandung analisis yang mendalam.
+
+    **Perbedaan karya ilmiah dan non-ilmiah**:
+    Karya ilmiah bersifat objektif, berdasarkan penelitian dan data, serta menggunakan bahasa baku. Sementara itu, karya non-ilmiah lebih bersifat subjektif, bisa berupa opini atau hiburan, dan menggunakan bahasa sehari-hari.
+
+    **Struktur karya ilmiah**:
+    - Pendahuluan (latar belakang, rumusan masalah, tujuan, manfaat)
+    - Kajian Teori
+    - Metode Penelitian
+    - Hasil dan Pembahasan
+    - Penutup (kesimpulan dan saran)
+    - Daftar Pustaka
+
+    **Langkah-langkah menyusun karya ilmiah**:
+    1. Menentukan topik.
+    2. Merumuskan tujuan dan rumusan masalah.
+    3. Mengumpulkan data.
+    4. Menyusun kerangka.
+    5. Menulis sesuai struktur.
+    6. Melakukan revisi.
+    7. Menyusun daftar pustaka.
+
+    Daftar pustaka penting untuk memberikan penghargaan pada sumber referensi, menunjukkan validitas informasi, dan meningkatkan kredibilitas.
+
+    **Tujuan penulisan karya ilmiah**:
+    Menyampaikan hasil penelitian secara sistematis, memberikan informasi/solusi, mengembangkan ilmu pengetahuan, dan melatih berpikir kritis.
+
+    **DRAMA**:
+    Drama adalah karya sastra berupa dialog yang dipentaskan. 
+
+    **Unsur intrinsik drama**:
+    - Alur
+    - Penokohan
+    - Latar
+    - Tema
+    - Dialog
+
+    Drama berbeda dengan prosa karena ditulis dalam bentuk dialog untuk dipentaskan. Ciri khas naskah drama adalah dominasi dialog antar tokoh.
+
+    **Petunjuk lakuan (stage direction)**:
+    Bagian drama yang memberikan petunjuk tentang gerakan, ekspresi, atau penampilan tokoh.
+
+    **Jenis-jenis drama**:
+    - Drama komedi (menghibur)
+    - Drama tragedi (tokoh utama mengalami kemalangan/kematian)
+    - Drama satire (kritik sosial)
+    - Melodrama (emosi berlebihan)
+
+    **Konflik dalam drama** berfungsi untuk membangun ketegangan dan pengembangan cerita.
+
+    **Tujuan mempelajari drama** adalah untuk mengapresiasi karya sastra dan mengembangkan keterampilan berkomunikasi.
+  `,
 };
 
 const soal = [
