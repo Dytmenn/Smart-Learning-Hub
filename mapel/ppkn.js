@@ -1,6 +1,72 @@
 const materi = {
   judul: "PPKN: Ancaman, Tantangan, Hambatan, dan Gangguan (ATHG) terhadap Integrasi Nasional",
-  deskripsi: "Materi ini membahas berbagai bentuk ancaman, tantangan, hambatan, dan gangguan yang dapat memengaruhi integrasi nasional Indonesia, serta upaya untuk mengatasinya."
+  deskripsi: ` Materi ini membahas berbagai bentuk ancaman, tantangan, hambatan, dan gangguan yang dapat memengaruhi integrasi nasional Indonesia, serta upaya untuk mengatasinya.
+  
+    **KONSEP ANCAMAN, TANTANGAN, HAMBATAN, DAN GANGGUAN (ATHG)**: 
+    Ancaman, Tantangan, Hambatan, dan Gangguan (ATHG) adalah berbagai faktor yang dapat memengaruhi integrasi nasional Indonesia.
+
+    **Pengertian Ancaman**:
+    Menurut UU RI No. 34 Tahun 2004, ancaman adalah setiap usaha dan kegiatan, baik dari dalam negeri maupun luar negeri yang membahayakan kedaulatan negara, keutuhan wilayah negara, dan keselamatan segenap bangsa.
+
+    **Jenis-jenis Ancaman**:
+    1. Ancaman Militer - bersifat fisik dan berdampak pada kedaulatan negara, seperti pemberontakan bersenjata, spionase, dan pelanggaran wilayah.
+    2. Ancaman Nonmiliter - bersifat nonfisik namun membahayakan ideologi, politik, ekonomi, sosial, budaya, seperti penyebaran hoaks, penyalahgunaan narkoba, dan korupsi.
+    3. Ancaman Hibrida - kombinasi ancaman militer dan nonmiliter, seperti cyber warfare, kasus narkoba lintas negara, dan pembajakan kapal.
+
+    **Bentuk Ancaman dari Dalam dan Luar Negeri**:
+    - Dari dalam: separatisme, konflik horizontal, KKN, penyebaran paham radikal
+    - Dari luar: pembajakan, impor barang ilegal, spionase, invasi budaya asing
+
+    **Tantangan terhadap Integrasi Nasional**:
+    Tantangan adalah suatu hal atau upaya yang bersifat atau bertujuan untuk menggugah kemampuan. Contohnya:
+    - Globalisasi yang menyebabkan lunturnya nilai-nilai lokal
+    - Konflik antarwarga berbasis SARA
+    - Tindakan KKN (Korupsi, Kolusi, Nepotisme)
+    - Kurangnya apresiasi terhadap budaya daerah
+
+    **Hambatan terhadap Integrasi Nasional**:
+    Hambatan adalah faktor yang menyebabkan pelaksanaan integrasi nasional tidak dapat berjalan dengan baik. Contohnya:
+    - Ketimpangan pembangunan antara daerah (Jawa dan luar Jawa)
+    - Ketidakadilan sosial-ekonomi yang memicu gerakan separatisme
+    - Sikap etnosentris yang berlebihan
+    - Kurangnya pemahaman multikultural
+
+    **Gangguan terhadap Integrasi Nasional**:
+    Gangguan adalah hal atau usaha yang berasal dari luar yang bertujuan melemahkan atau menghalangi secara tidak konsepsional. Contohnya:
+    - Posisi strategis Indonesia yang rentan terhadap penyelundupan
+    - Pergeseran nilai gotong royong di masyarakat
+    - Konflik antardaerah
+
+    **Faktor Pendorong Integrasi Nasional**:
+    - Sumpah Pemuda 1928
+    - Bhinneka Tunggal Ika
+    - Nilai fundamental sebagai acuan bersama
+    - Ancaman dari luar yang justru mempersatukan
+
+    **Upaya Mengatasi ATHG**:
+    1. Pembangunan merata dan berkeadilan
+    2. Dialog dan toleransi antarumat beragama
+    3. Pendekatan hukum dan kesejahteraan untuk masalah separatisme
+    4. Kolaborasi multidisiplin untuk menghadapi ancaman hibrida
+    5. Meningkatkan pemahaman multikultural
+
+    **Dampak ATHG terhadap Integrasi Nasional**:
+    - Melemahkan persatuan nasional
+    - Melemahkan identitas nasional
+    - Memicu kesenjangan antar daerah
+    - Konflik horizontal di masyarakat
+
+    **Strategi Penanganan ATHG**:
+    - Militer: untuk ancaman yang bersifat fisik/bersenjata
+    - Non-militer: pendekatan dialog, ekonomi, dan sosial budaya
+    - Kombinasi: untuk ancaman hibrida
+
+    **Peran Masyarakat dalam Menghadapi ATHG**:
+    - Meningkatkan kesadaran akan pentingnya persatuan
+    - Menghindari penyebaran hoaks dan isu SARA
+    - Menghargai keberagaman budaya dan agama
+    - Berpartisipasi dalam pembangunan nasional
+  `,
 };
 
 const soal = [
