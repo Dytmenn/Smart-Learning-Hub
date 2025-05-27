@@ -60,8 +60,7 @@ const soal = [
       { text: "34 cm", correct: false },
       { text: "√225 cm", correct: false }
     ],
-    difficulty: "sedang",
-    explanation: "Jarak tali busur dari pusat lingkaran adalah apotema. Dengan teorema Pythagoras, panjang setengah tali busur adalah √(r² - d²) = √(17² - 8²) = √(289 - 64) = √225 = 15. Karena ini setengah tali busur, maka panjang tali busur adalah 2 × 15 = 30 cm." // Catatan: Penjelasan mengandung kesalahan, tali busur yang benar adalah 30 cm
+    difficulty: "sedang"
   },
   {
     question: "Jika sudut pusat suatu lingkaran adalah 72°, maka besar sudut keliling yang menghadap busur yang sama adalah...",
@@ -71,8 +70,7 @@ const soal = [
       { text: "108°", correct: false },
       { text: "144°", correct: false }
     ],
-    difficulty: "mudah",
-    explanation: "Hubungan sudut pusat dan sudut keliling yang menghadap busur yang sama adalah: sudut keliling = sudut pusat/2 = 72°/2 = 36°."
+    difficulty: "mudah"
   },
   {
     question: "Perhatikan lingkaran dengan pusat O. Jika sudut keliling ∠ABC = 65° dan busur AC terletak di sebelah lain dari busur yang menghadap ∠ABC, maka besar sudut pusat ∠AOC adalah...",
@@ -82,8 +80,7 @@ const soal = [
       { text: "130°", correct: true },
       { text: "230°", correct: false }
     ],
-    difficulty: "susah",
-    explanation: "Sudut keliling ∠ABC = 65°, maka sudut pusat yang menghadap busur yang sama adalah 2 × 65° = 130°. Karena busur AC terletak di sebelah lain, maka sudut pusat ∠AOC = 130°."
+    difficulty: "susah"
   },
   {
     question: "Dari 7 orang akan dipilih 3 orang untuk jabatan ketua, sekretaris, dan bendahara. Banyaknya cara pemilihan yang mungkin adalah...",
@@ -93,8 +90,7 @@ const soal = [
       { text: "343", correct: false },
       { text: "5040", correct: false }
     ],
-    difficulty: "sedang",
-    explanation: "Ini merupakan permutasi 3 orang dari 7 orang: P(7,3) = 7!/(7-3)! = 7!/4! = 7 × 6 × 5 × 4!/4! = 7 × 6 × 5 = 210."
+    difficulty: "sedang"
   },
   {
     question: "Pada sebuah lingkaran, terdapat tiga titik A, B, dan C pada lingkaran. Jika ∠ABC = 110°, maka besar ∠AOC adalah... (O adalah pusat lingkaran)",
@@ -104,8 +100,7 @@ const soal = [
       { text: "140°", correct: false },
       { text: "220°", correct: true }
     ],
-    difficulty: "sedang",
-    explanation: "∠ABC adalah sudut keliling dan ∠AOC adalah sudut pusat yang menghadap busur yang sama. Maka ∠AOC = 2 × ∠ABC = 2 × 110° = 220°."
+    difficulty: "sedang"
   },
   {
     question: "Pada lingkaran dengan pusat O, dua buah sudut keliling ∠ABC dan ∠ADE menghadap busur AC. Jika ∠ABC = 42°, maka besar ∠ADE adalah...",
@@ -115,8 +110,7 @@ const soal = [
       { text: "84°", correct: false },
       { text: "138°", correct: false }
     ],
-    difficulty: "sedang",
-    explanation: "Sudut keliling yang menghadap busur yang sama besarnya sama. Karena ∠ABC dan ∠ADE menghadap busur AC yang sama, maka ∠ADE = ∠ABC = 42°."
+    difficulty: "sedang"
   },
   {
     question: "Pada lingkaran dengan pusat O, terdapat sebuah sudut pusat ∠POQ = 140° dan sudut keliling ∠PRQ yang menghadap busur PQ. Jika titik R terletak pada busur PQ, maka besar ∠PRQ adalah...",
@@ -126,8 +120,7 @@ const soal = [
       { text: "140°", correct: false },
       { text: "280°", correct: false }
     ],
-    difficulty: "sedang",
-    explanation: "∠POQ adalah sudut pusat dan ∠PRQ adalah sudut keliling yang menghadap busur yang sama. Maka ∠PRQ = ∠POQ/2 = 140°/2 = 70°."
+    difficulty: "sedang"
   },
   {
     question: "Sebuah lingkaran dengan jari-jari 14 cm memiliki sudut pusat 60°. Panjang busur yang dihadapi oleh sudut pusat tersebut adalah...",
@@ -137,8 +130,7 @@ const soal = [
       { text: "44 cm", correct: false },
       { text: "88 cm", correct: false }
     ],
-    difficulty: "sedang",
-    explanation: "Panjang busur = (θ/360°) × 2πr = (60°/360°) × 2π × 14 = (1/6) × 2π × 14 = (π × 14)/3 = 14,67 cm (dengan π = 3,14)."
+    difficulty: "sedang"
   },
   {
     question: "Sebuah juring lingkaran dengan jari-jari 21 cm memiliki sudut pusat 45°. Luas juring tersebut adalah...",
@@ -148,8 +140,7 @@ const soal = [
       { text: "38,5 cm²", correct: false },
       { text: "346,5 cm²", correct: false }
     ],
-    difficulty: "sedang",
-    explanation: "Luas juring = (θ/360°) × πr² = (45°/360°) × π × 21² = (1/8) × π × 441 = 55,125π = 55,125 × 3,14 = 173,0925 ≈ 173,25 cm²." // Catatan: Penjelasan mengandung kesalahan, jawaban yang benar adalah 173,25 cm²
+    difficulty: "sedang"
   },
   {
     question: "Pada lingkaran dengan jari-jari 7 cm, terdapat sebuah tembereng dengan sudut pusat 90°. Luas tembereng tersebut adalah... (π = 22/7)",
@@ -159,8 +150,7 @@ const soal = [
       { text: "154 cm²", correct: false },
       { text: "11 cm²", correct: false }
     ],
-    difficulty: "susah",
-    explanation: "Luas tembereng = luas juring - luas segitiga. Luas juring = (θ/360°) × πr² = (90°/360°) × π × 7² = (1/4) × 22/7 × 49 = 38,5 cm². Luas segitiga = (1/2) × r² × sin θ = (1/2) × 7² × sin 90° = (1/2) × 49 × 1 = 24,5 cm². Jadi, luas tembereng = 38,5 - 24,5 = 14 cm²." // Catatan: Penjelasan mengandung kesalahan, jawaban yang benar adalah 14 cm²
+    difficulty: "susah"
   },
   {
     question: "Sebuah juring lingkaran dengan jari-jari 10 cm memiliki panjang busur 5π cm. Besar sudut pusat juring tersebut adalah...",
@@ -170,8 +160,7 @@ const soal = [
       { text: "270°", correct: false },
       { text: "360°", correct: false }
     ],
-    difficulty: "sedang",
-    explanation: "Panjang busur = (θ/360°) × 2πr, maka θ = (panjang busur × 360°)/(2πr) = (5π × 360°)/(2π × 10) = (5 × 360°)/20 = 90°."
+    difficulty: "sedang"
   },
   {
     question: "Sebuah lingkaran dengan jari-jari 14 cm memiliki sudut pusat 30°. Luas juring yang dihadapi oleh sudut pusat tersebut adalah...",
@@ -181,8 +170,7 @@ const soal = [
       { text: "154 cm²", correct: false },
       { text: "616 cm²", correct: false }
     ],
-    difficulty: "sedang",
-    explanation: "Luas juring = (θ/360°) × πr² = (30°/360°) × π × 14² = (1/12) × π × 196 = 16,33π = 16,33 × 3,14 = 51,33 cm²."
+    difficulty: "sedang"
   },
   {
     question: "Ani memiliki 3 baju (merah, biru, hijau), 2 celana (hitam, cokelat), dan 4 jilbab (putih, kuning, ungu, pink). Banyaknya cara Ani berpakaian dengan menggunakan 1 baju, 1 celana, dan 1 jilbab adalah...",
@@ -192,8 +180,7 @@ const soal = [
       { text: "24", correct: true },
       { text: "32", correct: false }
     ],
-    difficulty: "mudah",
-    explanation: "Menggunakan aturan perkalian: banyaknya cara = 3 × 2 × 4 = 24 cara."
+    difficulty: "mudah"
   },
   {
     question: "Tersedia 4 rute dari kota A ke kota B, dan 3 rute dari kota B ke kota C. Banyaknya cara yang berbeda untuk pergi dari kota A ke kota C melalui kota B adalah...",
@@ -203,8 +190,7 @@ const soal = [
       { text: "24", correct: false },
       { text: "64", correct: false }
     ],
-    difficulty: "mudah",
-    explanation: "Menggunakan aturan perkalian: banyaknya cara = 4 × 3 = 12 cara."
+    difficulty: "mudah"
   },
   {
     question: "Dari 8 orang akan dibentuk susunan berbaris. Banyaknya cara menyusun 8 orang tersebut adalah...",
@@ -214,8 +200,7 @@ const soal = [
       { text: "40.320", correct: true },
       { text: "64", correct: false }
     ],
-    difficulty: "mudah",
-    explanation: "Banyaknya cara menyusun 8 orang = 8! = 8 × 7 × 6 × 5 × 4 × 3 × 2 × 1 = 40.320."
+    difficulty: "mudah"
   },
   {
     question: "Dari 9 siswa akan dipilih 3 siswa untuk lomba. Banyaknya cara pemilihan 3 siswa tersebut jika urutannya diperhatikan adalah...",
@@ -225,8 +210,7 @@ const soal = [
       { text: "729", correct: false },
       { text: "362.880", correct: false }
     ],
-    difficulty: "sedang",
-    explanation: "Ini merupakan permutasi 3 siswa dari 9 siswa: P(9,3) = 9!/(9-3)! = 9!/6! = 9 × 8 × 7 × 6!/6! = 9 × 8 × 7 = 504."
+    difficulty: "sedang"
   },
   {
     question: "Perhatikan kata "MATEMATIKA". Banyaknya susunan huruf yang berbeda dari kata tersebut adalah...",
@@ -236,8 +220,7 @@ const soal = [
       { text: "907.200", correct: false },
       { text: "3.628.800", correct: false }
     ],
-    difficulty: "susah",
-    explanation: "Kata 'MATEMATIKA' memiliki 10 huruf dengan 3 huruf A, 2 huruf T, dan 2 huruf M. Banyak susunan = 10!/(3! × 2! × 2!) = 10!/(6 × 2 × 2) = 10!/24 = 3.628.800/24 = 151.200."
+    difficulty: "susah"
   },
   {
     question: "Dari 6 buku matematika dan 4 buku fisika akan dipilih 2 buku matematika dan 3 buku fisika. Banyaknya cara pemilihan buku tersebut adalah...",
@@ -247,8 +230,7 @@ const soal = [
       { text: "150", correct: false },
       { text: "900", correct: false }
     ],
-    difficulty: "susah",
-    explanation: "Pemilihan 2 buku matematika dari 6 buku = C(6,2) = 15 cara. Pemilihan 3 buku fisika dari 4 buku = C(4,3) = 4 cara. Total cara = 15 × 4 = 60 cara."
+    difficulty: "susah"
   },
   {
     question: "Nilai dari 6! adalah...",
@@ -258,8 +240,7 @@ const soal = [
       { text: "720", correct: true },
       { text: "5040", correct: false }
     ],
-    difficulty: "mudah",
-    explanation: "6! = 6 × 5 × 4 × 3 × 2 × 1 = 720."
+    difficulty: "mudah"
   },
   {
     question: "Bentuk sederhana dari n(n+1)(n+2) adalah...",
@@ -269,8 +250,7 @@ const soal = [
       { text: "(n+2)!/[(n-1)!]", correct: true },
       { text: "3(n+1)!", correct: false }
     ],
-    difficulty: "susah",
-    explanation: "n(n+1)(n+2) = (n+2)!/[(n-1)!] karena (n+2)! = (n+2)(n+1)n(n-1)! dan (n+2)!/[(n-1)!] = (n+2)(n+1)n."
+    difficulty: "susah"
   },
   {
     question: "Anton akan pergi dari kota A ke kota D. Ia dapat melalui kota B atau kota C. Tersedia 3 bus dari kota A ke kota B, 2 bus dari kota A ke kota C, 4 bus dari kota B ke kota D, dan 3 bus dari kota C ke kota D. Banyaknya cara yang berbeda untuk pergi dari kota A ke kota D adalah...",
@@ -280,8 +260,7 @@ const soal = [
       { text: "24", correct: false },
       { text: "36", correct: false }
     ],
-    difficulty: "sedang",
-    explanation: "Rute A-B-D: 3 × 4 = 12 cara. Rute A-C-D: 2 × 3 = 6 cara. Total cara = 12 + 6 = 18 cara (menggunakan aturan penjumlahan)."
+    difficulty: "sedang"
   },
   {
     question: "Dalam sebuah kotak terdapat 7 bola bernomor 1 sampai 7. Banyaknya cara mengambil 2 bola secara acak dan terurut adalah...",
@@ -291,8 +270,7 @@ const soal = [
       { text: "49", correct: false },
       { text: "5040", correct: false }
     ],
-    difficulty: "sedang",
-    explanation: "Ini merupakan permutasi 2 bola dari 7 bola: P(7,2) = 7!/(7-2)! = 7!/5! = 7 × 6 × 5!/5! = 7 × 6 = 42."
+    difficulty: "sedang"
   },
   {
     question: "Dari 8 siswa akan dipilih 4 siswa untuk membentuk tim basket. Banyaknya cara pemilihan tim tersebut adalah...",
@@ -302,8 +280,7 @@ const soal = [
       { text: "1680", correct: false },
       { text: "40320", correct: false }
     ],
-    difficulty: "sedang",
-    explanation: "Ini merupakan kombinasi 4 siswa dari 8 siswa: C(8,4) = 8!/(4! × (8-4)!) = 8!/(4! × 4!) = 70."
+    difficulty: "sedang"
   },
   {
     question: "Dari angka 1, 2, 3, 4, 5, 6, 7, 8, 9 akan dibentuk bilangan tiga angka yang berbeda. Banyaknya bilangan tiga angka yang dapat dibentuk adalah...",
@@ -313,8 +290,7 @@ const soal = [
       { text: "720", correct: true },
       { text: "1000", correct: false }
     ],
-    difficulty: "sedang",
-    explanation: "Angka pertama: 9 pilihan (semua angka). Angka kedua: 8 pilihan (selain yang sudah dipilih). Angka ketiga: 7 pilihan (selain yang sudah dipilih). Total cara = 9 × 8 × 7 = 504." // Catatan: Penjelasan mengandung kesalahan, jawaban yang benar adalah 504
+    difficulty: "sedang"
   },
   {
     question: "Dalam perlombaan lari yang diikuti oleh 6 orang, akan ditentukan juara I, II, dan III. Banyaknya susunan juara yang mungkin adalah...",
@@ -324,8 +300,7 @@ const soal = [
       { text: "216", correct: false },
       { text: "720", correct: false }
     ],
-    difficulty: "sedang",
-    explanation: "Ini merupakan permutasi 3 orang dari 6 orang: P(6,3) = 6!/(6-3)! = 6!/3! = 6 × 5 × 4 × 3!/3! = 6 × 5 × 4 = 120."
+    difficulty: "sedang"
   },
   {
     question: "Pada lingkaran dengan jari-jari 10 cm, terdapat sebuah juring dengan luas 50π cm². Besar sudut pusat juring tersebut adalah...",
@@ -335,8 +310,7 @@ const soal = [
       { text: "180°", correct: true },
       { text: "270°", correct: false }
     ],
-    difficulty: "sedang",
-    explanation: "Luas juring = (θ/360°) × πr². Maka θ = (luas juring × 360°)/(πr²) = (50π × 360°)/(π × 100) = 180°."
+    difficulty: "sedang"
   },
   {
     question: "Perhatikan lingkaran dengan pusat O dan diameter AB. Jika titik C terletak pada lingkaran, maka besar ∠ACB adalah...",
@@ -346,8 +320,7 @@ const soal = [
       { text: "90°", correct: true },
       { text: "180°", correct: false }
     ],
-    difficulty: "mudah",
-    explanation: "Sudut keliling yang menghadap diameter besarnya 90°. Karena AB adalah diameter, maka ∠ACB = 90°."
+    difficulty: "mudah"
   },
   {
     question: "Suatu kata terdiri dari 8 huruf, dengan 2 huruf E, 3 huruf S, dan lainnya berbeda. Banyaknya susunan huruf yang berbeda dari kata tersebut adalah...",
@@ -357,8 +330,7 @@ const soal = [
       { text: "20.160", correct: false },
       { text: "40.320", correct: false }
     ],
-    difficulty: "susah",
-    explanation: "Kata memiliki 8 huruf dengan 2 huruf E, 3 huruf S, dan 3 huruf lainnya berbeda. Banyak susunan = 8!/(2! × 3!) = 8!/(2 × 6) = 40.320/12 = 3.360."
+    difficulty: "susah"
   },
   {
     question: "Sebuah lingkaran dengan jari-jari 8 cm memiliki tali busur sepanjang 8 cm. Jarak tali busur dari pusat lingkaran adalah...",
@@ -368,8 +340,7 @@ const soal = [
       { text: "8 cm", correct: false },
       { text: "8√2 cm", correct: false }
     ],
-    difficulty: "sedang",
-    explanation: "Misalkan jarak tali busur dari pusat adalah d. Dengan teorema Pythagoras: r² = (tali busur/2)² + d² ⟹ 8² = (8/2)² + d² ⟹ 64 = 16 + d² ⟹ d² = 48 ⟹ d = 4√3 cm."
+    difficulty: "sedang"
   },
   {
     question: "Kata "INDONESIA" akan disusun secara acak. Peluang terjadinya huruf vokal selalu berdampingan adalah...",
@@ -379,8 +350,7 @@ const soal = [
       { text: "1/6", correct: false },
       { text: "1/3", correct: false }
     ],
-    difficulty: "susah",
-    explanation: "Kata 'INDONESIA' memiliki 9 huruf dengan 5 huruf vokal (I, O, E, I, A). Jika huruf vokal dianggap sebagai 1 unit, maka ada 5 unit (huruf vokal) dan 4 huruf konsonan. Banyak susunan vokal = 5! = 120. Banyak susunan = 5! × 9!/5! = 120 × 9!/5! = 120 × 9!/(5 × 4 × 3 × 2 × 1) = 120 × 9!/120 = 9!. Peluang = 1/9."
+    difficulty: "susah"
   },
   {
     question: "Banyaknya bilangan bulat antara 100 dan 999 yang semua angkanya berbeda adalah...",
@@ -390,8 +360,7 @@ const soal = [
       { text: "900", correct: false },
       { text: "1000", correct: false }
     ],
-    difficulty: "sedang",
-    explanation: "Angka pertama: 9 pilihan (1-9). Angka kedua: 9 pilihan (0-9 kecuali angka pertama). Angka ketiga: 8 pilihan (0-9 kecuali angka pertama dan kedua). Total cara = 9 × 9 × 8 = 648."
+    difficulty: "sedang"
   }
 ];
 
