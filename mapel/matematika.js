@@ -213,7 +213,7 @@ const soal = [
     difficulty: "sedang"
   },
   {
-    question: "Perhatikan kata "MATEMATIKA". Banyaknya susunan huruf yang berbeda dari kata tersebut adalah...",
+    question: "Perhatikan kata MATEMATIKA. Banyaknya susunan huruf yang berbeda dari kata tersebut adalah...",
     answers: [
       { text: "10!", correct: false },
       { text: "151.200", correct: true },
@@ -343,7 +343,7 @@ const soal = [
     difficulty: "sedang"
   },
   {
-    question: "Kata "INDONESIA" akan disusun secara acak. Peluang terjadinya huruf vokal selalu berdampingan adalah...",
+    question: "Kata INDONESIA akan disusun secara acak. Peluang terjadinya huruf vokal selalu berdampingan adalah...",
     answers: [
       { text: "1/15", correct: false },
       { text: "1/9", correct: true },
