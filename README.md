@@ -67,20 +67,6 @@
 
 ---
 
-## 🎨 Screenshots (opsional)
-
-Tambahkan tangkapan layar UI jika diinginkan.
-
----
-
-## 👨‍💻 Pengembang
-
-**Initial D**  
-📷 [Instagram](https://instagram.com/diyytmen_)  
-💻 [GitHub](https://github.com/Dytmenn)
-
----
-
 ## 📄 Lisensi
 
 MIT License — bebas digunakan dan dimodifikasi dengan mencantumkan atribusi.
