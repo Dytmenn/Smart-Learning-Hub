@@ -1,51 +1,173 @@
 const materi = {
   judul: "English Grade 12 SMK - Job Application, Obligation, Offering Help, Cause and Effect",
   deskripsi: `
-  === JOB APPLICATION LETTER ===
+  =====================================================
+  1️⃣ JOB APPLICATION LETTER (SURAT LAMARAN KERJA)
+  =====================================================
+
   A job application letter is a formal letter used to apply for a job.
+  Surat lamaran kerja adalah surat resmi yang digunakan untuk melamar pekerjaan.
 
-  Outline of Application Letter:
-  1. Salutation (Dear Mr./Ms....)
-  2. Opening Paragraph (state the position and source of information)
-  3. Body (skills, experience, qualifications)
-  4. Closing Paragraph (request interview, thank the employer)
-  5. Enclosure (CV, certificates, etc.)
+  🎯 Tujuan:
+  - Memperkenalkan diri kepada perusahaan
+  - Menjelaskan posisi yang dilamar
+  - Menunjukkan kualifikasi dan pengalaman
+  - Meminta kesempatan wawancara
 
-  === OFFERING HELP ===
-  Offering Help:
+  📌 STRUCTURE / OUTLINE:
+
+  1. Salutation (Salam Pembuka)
+     Contoh:
+     - Dear Mr. Andi,
+     - Dear Ms. Sinta,
+     - Dear Hiring Manager,
+
+  2. Opening Paragraph (Paragraf Pembuka)
+     Berisi:
+     - Posisi yang dilamar
+     - Sumber informasi lowongan
+     Contoh:
+     "I am writing to apply for the position of Administrative Staff advertised on your website."
+
+  3. Body Paragraph (Isi Surat)
+     Berisi:
+     - Pendidikan
+     - Keahlian (skills)
+     - Pengalaman kerja/praktik kerja lapangan (PKL)
+     - Kepribadian yang mendukung pekerjaan
+
+     Contoh:
+     "I am a graduate of SMK majoring in Accounting. I have experience in using Microsoft Excel and handling financial reports."
+
+  4. Closing Paragraph (Paragraf Penutup)
+     Berisi:
+     - Harapan untuk interview
+     - Ucapan terima kasih
+     Contoh:
+     "I look forward to the opportunity to discuss my qualifications further. Thank you for your time and consideration."
+
+  5. Enclosure (Lampiran)
+     Dokumen pendukung seperti:
+     - Curriculum Vitae (CV)
+     - Copy of certificates
+     - Transcript
+     Biasanya ditulis: Enclosure: Curriculum Vitae
+
+  =====================================================
+  2️⃣ OFFERING HELP (MENAWARKAN BANTUAN)
+  =====================================================
+
+  Offering help digunakan untuk menawarkan bantuan kepada orang lain.
+
+  📌 Expressions of Offering Help:
   - May I help you?
+  - Can I help you?
   - What can I do for you?
   - Would you like me to help you?
+  - Do you need any help?
 
-  Accepting Help:
+  📌 Accepting Help:
   - Yes, please.
   - Thank you very much.
+  - That would be great.
   - I appreciate that.
 
-  Refusing Help:
+  📌 Refusing Help:
   - No, thanks.
   - It's alright.
   - I can manage.
+  - Thank you, but I don’t need help.
 
-  === OBLIGATION ===
-  Asking about obligation:
+  📌 Example Dialogue:
+
+  A: May I help you with the documents?
+  B: Yes, please. Thank you very much.
+  A: You're welcome.
+
+  =====================================================
+  3️⃣ OBLIGATION (KEWAJIBAN)
+  =====================================================
+
+  Obligation digunakan untuk menyatakan kewajiban, keharusan, atau aturan.
+
+  📌 Asking About Obligation (Menanyakan kewajiban):
   - Should I prepare the document?
-  - Do I have to call him?
-  - Am I supposed to attend?
+  - Do I have to submit it today?
+  - Am I supposed to attend the meeting?
 
-  Expressing obligation:
-  - You must wear a uniform.
-  - I have to submit the report.
-  - You are supposed to arrive on time.
-  - You ought to respect your teacher.
+  📌 Expressing Obligation (Menyatakan kewajiban):
 
-  === CAUSE AND EFFECT ===
-  Cause connectors:
-  - because of
-  - due to
-  - owing to
-  - on account of
-  - thanks to
+  1. MUST
+     Digunakan untuk kewajiban yang kuat / aturan penting.
+     Example:
+     - You must wear a helmet.
+     - Employees must follow safety rules.
+
+  2. HAVE TO
+     Digunakan untuk kewajiban karena aturan atau situasi.
+     Example:
+     - I have to submit the report today.
+     - Students have to wear uniforms.
+
+  3. SUPPOSED TO
+     Digunakan untuk sesuatu yang diharapkan dilakukan.
+     Example:
+     - You are supposed to arrive on time.
+
+  4. OUGHT TO
+     Digunakan untuk saran yang kuat atau kewajiban moral.
+     Example:
+     - You ought to respect your parents.
+
+  📌 Negative Forms:
+  - Must not (prohibition)
+    Example: You must not smoke here.
+  - Don’t have to (not necessary)
+    Example: You don’t have to come early.
+
+  =====================================================
+  4️⃣ CAUSE AND EFFECT (SEBAB DAN AKIBAT)
+  =====================================================
+
+  Cause and effect digunakan untuk menjelaskan hubungan sebab dan akibat.
+
+  📌 Cause Connectors (Kata Penghubung Sebab):
+
+  1. Because of
+     Example:
+     - We stayed home because of the rain.
+
+  2. Due to
+     Example:
+     - The match was canceled due to heavy rain.
+
+  3. Owing to
+     Example:
+     - He was absent owing to illness.
+
+  4. On account of
+     Example:
+     - The road was closed on account of the accident.
+
+  5. Thanks to
+     Digunakan untuk sebab yang positif.
+     Example:
+     - Thanks to your help, I passed the exam.
+
+  📌 Pola Umum:
+  Cause + Noun
+  Contoh:
+  - because of the rain
+  - due to illness
+  - owing to traffic jam
+
+  =====================================================
+  💡 SUMMARY
+  =====================================================
+  - Application letter harus formal dan sistematis.
+  - Offering help memiliki tiga bagian: offering, accepting, refusing.
+  - Obligation menggunakan must, have to, supposed to, ought to.
+  - Cause and effect menjelaskan hubungan sebab-akibat menggunakan connector yang tepat.
   `
 };
 
@@ -357,3 +479,4 @@ const soal = [
     difficulty: "susah"
   }
 ];
+
