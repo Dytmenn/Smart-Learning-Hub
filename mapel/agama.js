@@ -1,357 +1,366 @@
 const materi = {
-  judul: "Pendidikan Agama Islam: Kerukunan, Pernikahan, Menjaga Kehormatan, dan Adab Media Sosial",
-  deskripsi: ` Materi ini membahas tentang kerukunan dan toleransi dalam Islam, ketentuan pernikahan, menjaga kehormatan, serta adab dalam menggunakan media sosial menurut ajaran Islam.
-  
-    **BAB IV: MENGUATKAN KERUKUNAN DAN PERNIKAHAN DALAM ISLAM**:
-    
-    **Toleransi dan Kerukunan**:
-    - Toleransi merupakan sikap menghargai perbedaan agama, suku, etnis, pendapat, dan perilaku yang berbeda
-    - Surah Al-Kafirun (QS. 109) mengajarkan: "Untukmu agamamu, dan untukku agamaku"
-    - QS. Yusuf (12):40-41 dan QS. Al-Maidah (5):32 mengajarkan tentang nilai-nilai kehidupan dan toleransi
-    
-    **Ketentuan Pernikahan dalam Islam**:
-    - Hukum pernikahan: Jaiz (boleh), Sunnah (dianjurkan), Wajib (harus dilakukan), Makruh (sebaiknya tidak dilakukan), Haram (dilarang)
-    - Pernikahan yang haram dalam Islam meliputi: menikahi mahram, menikah dalam masa iddah, menikahi wanita yang bersuami, dan sebagainya
-    - Syarat perempuan yang boleh dipinang: tidak dalam pinangan orang lain, tidak dalam masa iddah, dan bukan mahram
-    - Macam-macam nikah yang dilarang: Nikah Mut'ah (kontrak), Nikah Syigar, Nikah Muhallil, Nikah Silang, Nikah Khadam
-    
-    **Talak, Iddah, dan Rujuk**:
-    - Rukun nikah: calon suami, calon istri, wali, dua orang saksi, dan ijab kabul
-    - Dasar hukum talak: "Sesuatu yang halal namun paling dibenci Allah adalah talak" (HR. Abu Daud dan Ibnu Majah)
-    - Iddah: masa tunggu bagi wanita setelah bercerai atau ditinggal mati suami
-    - Macam-macam iddah: iddah karena cerai hidup, iddah karena cerai mati, iddah wanita hamil
-    - Tujuan iddah: memastikan kekosongan rahim, memberi kesempatan rujuk, penghormatan terhadap pernikahan sebelumnya
-    - Rujuk: kembalinya suami kepada istri yang ditalak raj'i dalam masa iddah
-    
-    **BAB VII: MENGUATKAN IMAN DENGAN MENJAGA KEHORMATAN**:
-    
-    **Menjaga Kehormatan**:
-    - Menguatkan iman dengan menjaga kehormatan, ikhlas, malu, dan zuhud
-    - QS. Al-A'raf (7):27-29 mengajarkan tentang perintah Allah untuk menjaga kehormatan
-    - Maruah: harga diri atau martabat seseorang yang harus dijaga
-    - Khawas: orang-orang istimewa yang menjaga diri dari perbuatan maksiat
-    
-    **BAB VIII: ADAB MENGGUNAKAN MEDIA SOSIAL**:
-    
-    **Adab dalam Dunia Maya**:
-    - Adab online: etika yang harus dijaga saat berinteraksi di dunia maya
-    - Su'udzan: prasangka buruk yang harus dihindari
-    - Ghibah: menggunjing atau membicarakan keburukan orang lain
-    - Hoax: berita bohong yang harus dihindari penyebarannya
-    - Tajasus: mencari-cari kesalahan orang lain
-    - Tabayun: klarifikasi informasi sebelum menyebarkannya
-  `,
+  judul: "Pendidikan Agama Islam Kelas XII - Q.S. Al-Qasas:85 dan Q.S. Al-Baqarah:143",
+  deskripsi: `
+  =====================================================
+  1️⃣ Q.S. AL-QASAS AYAT 85
+  =====================================================
+
+  Artinya:
+  "Sesungguhnya (Allah) yang mewajibkan atasmu (Muhammad) 
+  melaksanakan hukum-hukum Al-Qur'an benar-benar akan 
+  mengembalikanmu ke tempat kembali. Katakanlah: 
+  Tuhanku mengetahui orang yang membawa petunjuk 
+  dan orang yang berada dalam kesesatan yang nyata."
+
+  📌 Makna Kandungan:
+  - Janji Allah kepada Nabi Muhammad SAW
+  - Allah akan mengembalikan Nabi ke Makkah
+  - Allah Maha Mengetahui siapa yang mendapat petunjuk
+  - Penegasan bahwa kebenaran akan menang
+
+  📌 Asbabun Nuzul:
+  Ayat ini turun sebagai penguatan janji Allah kepada Nabi
+  Muhammad SAW bahwa beliau akan dikembalikan ke Makkah
+  setelah hijrah dan diusir dari kota tersebut.
+
+  =====================================================
+  2️⃣ Q.S. AL-BAQARAH AYAT 143
+  =====================================================
+
+  Artinya:
+  "Dan demikian (pula) Kami telah menjadikan kamu (umat Islam) 
+  umat yang pertengahan agar kamu menjadi saksi atas (perbuatan) 
+  manusia dan agar Rasul (Muhammad) menjadi saksi atas kamu..."
+
+  📌 Makna Kandungan:
+  - Umat Islam sebagai umat pertengahan (ummatan wasathan)
+  - Umat yang adil dan seimbang
+  - Peristiwa pemindahan kiblat
+  - Ujian bagi orang beriman
+
+  📌 Asbabun Nuzul:
+  Ayat ini turun terkait peristiwa pemindahan kiblat
+  dari Baitul Maqdis ke Ka'bah di Makkah.
+  Peristiwa ini menjadi ujian bagi kaum muslimin.
+
+  =====================================================
+  💡 Nilai yang Terkandung:
+  - Keimanan kepada janji Allah
+  - Kesabaran dalam ujian
+  - Keadilan dan keseimbangan
+  - Ketaatan kepada Rasul
+  `
 };
 
 const soal = [
+
+  // ================= 1–10 (MUDAH) =================
+
   {
-    question: "Dalam QS. Al-Kafirun ayat terakhir disebutkan...",
+    question: "Q.S. Al-Qasas ayat 85 berisi tentang...",
     answers: [
-      { text: "Aku tidak akan menyembah apa yang kamu sembah", correct: false },
-      { text: "Untukmu agamamu, dan untukku agamaku", correct: true },
-      { text: "Kamu bukan penyembah Tuhan yang aku sembah", correct: false },
-      { text: "Aku tidak akan menjadi penyembah apa yang kamu sembah", correct: false }
+      { text: "Janji Allah kepada Nabi Muhammad", correct: true },
+      { text: "Perintah puasa", correct: false },
+      { text: "Larangan riba", correct: false },
+      { text: "Kisah Nabi Musa", correct: false }
     ],
     difficulty: "mudah"
   },
   {
-    question: "Pernikahan yang dilakukan dengan tujuan menghalalkan seseorang yang telah ditalak tiga oleh suaminya untuk kembali kepada mantan suaminya disebut...",
+    question: "Allah berjanji akan mengembalikan Nabi Muhammad ke...",
     answers: [
-      { text: "Nikah Mut'ah", correct: false },
-      { text: "Nikah Syigar", correct: false },
-      { text: "Nikah Muhallil", correct: true },
-      { text: "Nikah Khadam", correct: false }
-    ],
-    difficulty: "sedang"
-  },
-  {
-    question: "Berikut ini yang bukan termasuk rukun nikah adalah...",
-    answers: [
-      { text: "Calon suami", correct: false },
-      { text: "Wali", correct: false },
-      { text: "Mahar", correct: true },
-      { text: "Dua orang saksi", correct: false }
+      { text: "Makkah", correct: true },
+      { text: "Madinah", correct: false },
+      { text: "Thaif", correct: false },
+      { text: "Syam", correct: false }
     ],
     difficulty: "mudah"
   },
   {
-    question: "Hukum pernikahan menjadi wajib apabila...",
+    question: "Umat pertengahan disebut dalam Al-Qur'an sebagai...",
     answers: [
-      { text: "Seseorang memiliki keinginan untuk menikah", correct: false },
-      { text: "Seseorang memiliki harta yang cukup untuk menikah", correct: false },
-      { text: "Seseorang takut terjerumus dalam perzinaan jika tidak menikah", correct: true },
-      { text: "Seseorang ingin mendapat keturunan", correct: false }
-    ],
-    difficulty: "sedang"
-  },
-  {
-    question: "Iddah bagi wanita yang dicerai dalam keadaan tidak hamil dan masih haid adalah...",
-    answers: [
-      { text: "3 kali suci", correct: true },
-      { text: "4 bulan 10 hari", correct: false },
-      { text: "Sampai melahirkan", correct: false },
-      { text: "1 tahun", correct: false }
-    ],
-    difficulty: "sedang"
-  },
-  {
-    question: "Dasar hukum talak menurut hadis yang diriwayatkan Abu Daud dan Ibnu Majah menyebutkan bahwa talak adalah...",
-    answers: [
-      { text: "Sesuatu yang dianjurkan dalam kondisi tertentu", correct: false },
-      { text: "Sesuatu yang halal namun paling dibenci Allah", correct: true },
-      { text: "Sesuatu yang haram kecuali dalam kondisi darurat", correct: false },
-      { text: "Sesuatu yang menyebabkan Arsy bergetar", correct: false }
-    ],
-    difficulty: "sedang"
-  },
-  {
-    question: "Sikap menghargai perbedaan agama, suku, etnis, pendapat, dan perilaku yang berbeda disebut...",
-    answers: [
-      { text: "Pluralisme", correct: false },
-      { text: "Toleransi", correct: true },
-      { text: "Liberalisme", correct: false },
-      { text: "Inklusivisme", correct: false }
+      { text: "Ummatan wasathan", correct: true },
+      { text: "Khairu ummah", correct: false },
+      { text: "Ummatan wahidah", correct: false },
+      { text: "Ahlul kitab", correct: false }
     ],
     difficulty: "mudah"
   },
   {
-    question: "QS. Al-Maidah (5):32 membahas tentang...",
+    question: "Pemindahan kiblat terjadi dari...",
     answers: [
-      { text: "Perintah berbuat adil", correct: false },
-      { text: "Perintah menikah", correct: false },
-      { text: "Larangan membunuh", correct: true },
-      { text: "Larangan berjudi", correct: false }
-    ],
-    difficulty: "sedang"
-  },
-  {
-    question: "Kembalinya suami kepada istri yang ditalak raj'i dalam masa iddah disebut...",
-    answers: [
-      { text: "Khulu'", correct: false },
-      { text: "Fasakh", correct: false },
-      { text: "Rujuk", correct: true },
-      { text: "Li'an", correct: false }
+      { text: "Baitul Maqdis ke Ka'bah", correct: true },
+      { text: "Ka'bah ke Madinah", correct: false },
+      { text: "Makkah ke Syam", correct: false },
+      { text: "Thaif ke Makkah", correct: false }
     ],
     difficulty: "mudah"
   },
   {
-    question: "Salah satu syarat perempuan yang boleh dipinang adalah...",
+    question: "Q.S. Al-Baqarah ayat 143 menjelaskan bahwa umat Islam adalah umat yang...",
     answers: [
-      { text: "Masih dalam masa iddah", correct: false },
-      { text: "Sedang dalam pinangan orang lain", correct: false },
-      { text: "Tidak sedang dalam pinangan orang lain", correct: true },
-      { text: "Masih memiliki hubungan mahram", correct: false }
+      { text: "Adil dan seimbang", correct: true },
+      { text: "Paling kaya", correct: false },
+      { text: "Paling kuat", correct: false },
+      { text: "Paling banyak", correct: false }
     ],
     difficulty: "mudah"
   },
   {
-    question: "Membicarakan keburukan orang lain dalam Islam disebut...",
+    question: "Peristiwa hijrah Nabi terjadi dari Makkah ke...",
     answers: [
-      { text: "Namimah", correct: false },
-      { text: "Ghibah", correct: true },
-      { text: "Su'udzan", correct: false },
-      { text: "Tajasus", correct: false }
+      { text: "Madinah", correct: true },
+      { text: "Thaif", correct: false },
+      { text: "Syam", correct: false },
+      { text: "Yaman", correct: false }
     ],
     difficulty: "mudah"
   },
   {
-    question: "Klarifikasi informasi sebelum menyebarkannya disebut...",
+    question: "Ka'bah berada di kota...",
     answers: [
-      { text: "Tabayun", correct: true },
-      { text: "Tabarruj", correct: false },
-      { text: "Takabbur", correct: false },
-      { text: "Taklid", correct: false }
+      { text: "Makkah", correct: true },
+      { text: "Madinah", correct: false },
+      { text: "Yerusalem", correct: false },
+      { text: "Baghdad", correct: false }
     ],
     difficulty: "mudah"
   },
   {
-    question: "Mencari-cari kesalahan orang lain dalam Islam disebut...",
+    question: "Baitul Maqdis terletak di...",
     answers: [
-      { text: "Hasad", correct: false },
-      { text: "Ghibah", correct: false },
-      { text: "Tajasus", correct: true },
-      { text: "Namimah", correct: false }
+      { text: "Yerusalem", correct: true },
+      { text: "Makkah", correct: false },
+      { text: "Madinah", correct: false },
+      { text: "Mesir", correct: false }
+    ],
+    difficulty: "mudah"
+  },
+  {
+    question: "Salah satu nilai dalam Q.S. Al-Qasas:85 adalah...",
+    answers: [
+      { text: "Percaya pada janji Allah", correct: true },
+      { text: "Bersikap ragu", correct: false },
+      { text: "Takut berdakwah", correct: false },
+      { text: "Menghindari ujian", correct: false }
+    ],
+    difficulty: "mudah"
+  },
+  {
+    question: "Umat Islam dijadikan saksi atas...",
+    answers: [
+      { text: "Perbuatan manusia", correct: true },
+      { text: "Malaikat", correct: false },
+      { text: "Jin", correct: false },
+      { text: "Hewan", correct: false }
+    ],
+    difficulty: "mudah"
+  },
+
+  // ================= 11–20 (SEDANG) =================
+
+  {
+    question: "Asbabun nuzul Q.S. Al-Qasas:85 berkaitan dengan...",
+    answers: [
+      { text: "Janji Allah setelah hijrah", correct: true },
+      { text: "Perang Uhud", correct: false },
+      { text: "Isra Mi'raj", correct: false },
+      { text: "Turunnya zakat", correct: false }
     ],
     difficulty: "sedang"
   },
   {
-    question: "Pernikahan yang dilakukan dengan perjanjian dalam jangka waktu tertentu disebut...",
+    question: "Makna 'tempat kembali' dalam Q.S. Al-Qasas:85 adalah...",
     answers: [
-      { text: "Nikah Mut'ah", correct: true },
-      { text: "Nikah Syigar", correct: false },
-      { text: "Nikah Muhallil", correct: false },
-      { text: "Nikah Khadam", correct: false }
+      { text: "Makkah", correct: true },
+      { text: "Surga", correct: false },
+      { text: "Madinah", correct: false },
+      { text: "Syam", correct: false }
     ],
     difficulty: "sedang"
   },
   {
-    question: "Harga diri atau martabat seseorang yang harus dijaga dalam Islam disebut...",
+    question: "Pemindahan kiblat menunjukkan bahwa seorang mukmin harus...",
     answers: [
-      { text: "Maruah", correct: true },
-      { text: "Muru'ah", correct: false },
-      { text: "Mubahalah", correct: false },
-      { text: "Muhasabah", correct: false }
+      { text: "Taat pada perintah Allah", correct: true },
+      { text: "Memilih aturan sendiri", correct: false },
+      { text: "Menolak perubahan", correct: false },
+      { text: "Mengikuti mayoritas", correct: false }
     ],
     difficulty: "sedang"
   },
   {
-    question: "Orang-orang istimewa yang menjaga diri dari perbuatan maksiat disebut...",
+    question: "Tujuan dijadikannya umat Islam sebagai ummatan wasathan adalah agar...",
     answers: [
-      { text: "Khawas", correct: true },
-      { text: "Khawarij", correct: false },
-      { text: "Khadam", correct: false },
-      { text: "Khalaf", correct: false }
+      { text: "Menjadi saksi atas manusia", correct: true },
+      { text: "Menjadi bangsa terbesar", correct: false },
+      { text: "Menjadi bangsa terkaya", correct: false },
+      { text: "Menguasai dunia", correct: false }
+    ],
+    difficulty: "sedang"
+  },
+  {
+    question: "Hikmah ujian pemindahan kiblat adalah untuk mengetahui...",
+    answers: [
+      { text: "Siapa yang taat dan siapa yang ragu", correct: true },
+      { text: "Siapa yang kaya", correct: false },
+      { text: "Siapa yang kuat", correct: false },
+      { text: "Siapa yang terkenal", correct: false }
+    ],
+    difficulty: "sedang"
+  },
+  {
+    question: "Allah tidak akan menyia-nyiakan...",
+    answers: [
+      { text: "Iman orang beriman", correct: true },
+      { text: "Harta manusia", correct: false },
+      { text: "Kekuasaan dunia", correct: false },
+      { text: "Jabatan", correct: false }
+    ],
+    difficulty: "sedang"
+  },
+  {
+    question: "Sikap yang sesuai dengan Q.S. Al-Qasas:85 adalah...",
+    answers: [
+      { text: "Sabar dan yakin pada janji Allah", correct: true },
+      { text: "Putus asa", correct: false },
+      { text: "Takut berjuang", correct: false },
+      { text: "Menyerah", correct: false }
+    ],
+    difficulty: "sedang"
+  },
+  {
+    question: "Peristiwa pemindahan kiblat terjadi pada tahun...",
+    answers: [
+      { text: "Di Madinah setelah hijrah", correct: true },
+      { text: "Sebelum kenabian", correct: false },
+      { text: "Saat di Thaif", correct: false },
+      { text: "Saat di Gua Hira", correct: false }
+    ],
+    difficulty: "sedang"
+  },
+  {
+    question: "Makna ummatan wasathan adalah umat yang...",
+    answers: [
+      { text: "Seimbang dan tidak ekstrem", correct: true },
+      { text: "Keras dan kasar", correct: false },
+      { text: "Lemah", correct: false },
+      { text: "Fanatik buta", correct: false }
+    ],
+    difficulty: "sedang"
+  },
+  {
+    question: "Q.S. Al-Baqarah ayat 143 termasuk surah yang turun di...",
+    answers: [
+      { text: "Madinah", correct: true },
+      { text: "Makkah", correct: false },
+      { text: "Thaif", correct: false },
+      { text: "Yaman", correct: false }
+    ],
+    difficulty: "sedang"
+  },
+
+  // ================= 21–30 (SUSAH) =================
+
+  {
+    question: "Nilai utama dari Q.S. Al-Qasas:85 adalah...",
+    answers: [
+      { text: "Keyakinan terhadap pertolongan Allah", correct: true },
+      { text: "Kebebasan mutlak", correct: false },
+      { text: "Kekuasaan manusia", correct: false },
+      { text: "Keuntungan dunia", correct: false }
     ],
     difficulty: "susah"
   },
   {
-    question: "Berita bohong yang disebarkan di media sosial disebut...",
+    question: "Makna saksi dalam Q.S. Al-Baqarah:143 adalah...",
     answers: [
-      { text: "Fitnah", correct: false },
-      { text: "Hoax", correct: true },
-      { text: "Gibah", correct: false },
-      { text: "Hujat", correct: false }
-    ],
-    difficulty: "mudah"
-  },
-  {
-    question: "Iddah bagi wanita yang ditinggal mati suaminya dan tidak dalam keadaan hamil adalah...",
-    answers: [
-      { text: "3 kali suci", correct: false },
-      { text: "3 bulan", correct: false },
-      { text: "4 bulan 10 hari", correct: true },
-      { text: "1 tahun", correct: false }
-    ],
-    difficulty: "sedang"
-  },
-  {
-    question: "Prasangka buruk terhadap orang lain dalam Islam disebut...",
-    answers: [
-      { text: "Su'udzan", correct: true },
-      { text: "Husnudzan", correct: false },
-      { text: "Takabbur", correct: false },
-      { text: "Tajasus", correct: false }
-    ],
-    difficulty: "mudah"
-  },
-  {
-    question: "Pernikahan yang dilakukan dengan cara tukar-menukar wanita tanpa mahar disebut...",
-    answers: [
-      { text: "Nikah Mut'ah", correct: false },
-      { text: "Nikah Syigar", correct: true },
-      { text: "Nikah Muhallil", correct: false },
-      { text: "Nikah Khadam", correct: false }
+      { text: "Memberi kesaksian atas amal manusia", correct: true },
+      { text: "Menghukum manusia", correct: false },
+      { text: "Mengatur dunia", correct: false },
+      { text: "Menjadi penguasa", correct: false }
     ],
     difficulty: "susah"
   },
   {
-    question: "Tujuan iddah yang berkaitan dengan kepastian keturunan adalah...",
+    question: "Sikap moderat dalam Islam berarti...",
     answers: [
-      { text: "Memberi kesempatan untuk rujuk", correct: false },
-      { text: "Menghormati pernikahan sebelumnya", correct: false },
-      { text: "Memastikan kekosongan rahim", correct: true },
-      { text: "Memberikan nafkah pada istri", correct: false }
-    ],
-    difficulty: "sedang"
-  },
-  {
-    question: "QS. Al-A'raf (7):27-29 mengajarkan tentang...",
-    answers: [
-      { text: "Kewajiban zakat", correct: false },
-      { text: "Perintah shalat", correct: false },
-      { text: "Perintah menjaga kehormatan", correct: true },
-      { text: "Larangan riba", correct: false }
-    ],
-    difficulty: "sedang"
-  },
-  {
-    question: "Etika yang harus dijaga saat berinteraksi di dunia maya disebut...",
-    answers: [
-      { text: "Adab online", correct: true },
-      { text: "Etika virtual", correct: false },
-      { text: "Moral digital", correct: false },
-      { text: "Akhlak cyber", correct: false }
-    ],
-    difficulty: "mudah"
-  },
-  {
-    question: "Hukum pernikahan menjadi makruh apabila...",
-    answers: [
-      { text: "Seseorang mampu secara finansial dan jasmani", correct: false },
-      { text: "Seseorang khawatir tidak dapat berlaku adil", correct: true },
-      { text: "Seseorang takut terjerumus dalam perzinaan", correct: false },
-      { text: "Seseorang tidak mampu memberi nafkah", correct: false }
-    ],
-    difficulty: "sedang"
-  },
-  {
-    question: "Talak yang dapat dirujuk kembali dalam masa iddah disebut...",
-    answers: [
-      { text: "Talak ba'in", correct: false },
-      { text: "Talak raj'i", correct: true },
-      { text: "Talak ba'in kubra", correct: false },
-      { text: "Talak bid'i", correct: false }
-    ],
-    difficulty: "sedang"
-  },
-  {
-    question: "Pernikahan menjadi haram jika dilakukan dengan...",
-    answers: [
-      { text: "Wanita yang bukan mahram", correct: false },
-      { text: "Wanita muslimah", correct: false },
-      { text: "Wanita yang masih dalam masa iddah", correct: true },
-      { text: "Wanita yang belum pernah menikah", correct: false }
-    ],
-    difficulty: "mudah"
-  },
-  {
-    question: "Dalam adab bermedia sosial, yang harus dilakukan ketika menerima informasi adalah...",
-    answers: [
-      { text: "Langsung membagikannya kepada orang lain", correct: false },
-      { text: "Mengomentari informasi tersebut", correct: false },
-      { text: "Melakukan tabayun atau klarifikasi kebenarannya", correct: true },
-      { text: "Mengabaikan informasi tersebut", correct: false }
-    ],
-    difficulty: "mudah"
-  },
-  {
-    question: "Sikap zuhud dalam konteks penggunaan media sosial berarti...",
-    answers: [
-      { text: "Menggunakan media sosial sepuasnya", correct: false },
-      { text: "Tidak menggunakan media sosial sama sekali", correct: false },
-      { text: "Menggunakan media sosial dengan tidak berlebihan", correct: true },
-      { text: "Menggunakan media sosial hanya untuk bisnis", correct: false }
+      { text: "Tidak berlebihan dan tidak meremehkan", correct: true },
+      { text: "Bersikap keras", correct: false },
+      { text: "Selalu ekstrem", correct: false },
+      { text: "Mengikuti hawa nafsu", correct: false }
     ],
     difficulty: "susah"
   },
   {
-    question: "Hukum menyebarkan berita hoax dalam Islam adalah...",
+    question: "Pemindahan kiblat menjadi bukti bahwa hukum Allah...",
     answers: [
-      { text: "Mubah", correct: false },
-      { text: "Makruh", correct: false },
-      { text: "Haram", correct: true },
-      { text: "Sunnah", correct: false }
+      { text: "Harus ditaati tanpa ragu", correct: true },
+      { text: "Boleh ditolak", correct: false },
+      { text: "Bisa diubah manusia", correct: false },
+      { text: "Tidak penting", correct: false }
     ],
-    difficulty: "mudah"
+    difficulty: "susah"
   },
   {
-    question: "Iddah bagi wanita yang dicerai dalam keadaan hamil adalah...",
+    question: "Pelajaran penting dari hijrah Nabi adalah...",
     answers: [
-      { text: "3 kali suci", correct: false },
-      { text: "3 bulan", correct: false },
-      { text: "4 bulan 10 hari", correct: false },
-      { text: "Sampai melahirkan", correct: true }
+      { text: "Kesabaran dan strategi dalam berdakwah", correct: true },
+      { text: "Menghindari tanggung jawab", correct: false },
+      { text: "Takut menghadapi ujian", correct: false },
+      { text: "Mencari kekuasaan", correct: false }
     ],
-    difficulty: "sedang"
+    difficulty: "susah"
   },
   {
-    question: "Sifat ikhlas dalam menjaga kehormatan berarti...",
+    question: "Allah Maha Mengetahui siapa yang berada dalam...",
     answers: [
-      { text: "Melakukan perbuatan untuk mendapat pujian", correct: false },
-      { text: "Melakukan perbuatan untuk mendapat imbalan", correct: false },
-      { text: "Melakukan perbuatan semata-mata karena Allah SWT", correct: true },
-      { text: "Melakukan perbuatan untuk terhindar dari hukuman", correct: false }
+      { text: "Petunjuk dan kesesatan", correct: true },
+      { text: "Kekayaan", correct: false },
+      { text: "Kedudukan", correct: false },
+      { text: "Popularitas", correct: false }
     ],
-    difficulty: "mudah"
+    difficulty: "susah"
+  },
+  {
+    question: "Ketaatan dalam perubahan kiblat menunjukkan sikap...",
+    answers: [
+      { text: "Tunduk pada perintah Allah", correct: true },
+      { text: "Egois", correct: false },
+      { text: "Sombong", correct: false },
+      { text: "Ragu-ragu", correct: false }
+    ],
+    difficulty: "susah"
+  },
+  {
+    question: "Hikmah menjadi umat pertengahan adalah...",
+    answers: [
+      { text: "Menjadi contoh keadilan bagi umat lain", correct: true },
+      { text: "Menjadi penguasa dunia", correct: false },
+      { text: "Mencari pujian", correct: false },
+      { text: "Menghindari tanggung jawab", correct: false }
+    ],
+    difficulty: "susah"
+  },
+  {
+    question: "Kandungan utama kedua ayat tersebut adalah...",
+    answers: [
+      { text: "Keimanan, ketaatan, dan keseimbangan", correct: true },
+      { text: "Kekayaan dunia", correct: false },
+      { text: "Kekuatan fisik", correct: false },
+      { text: "Kebebasan tanpa aturan", correct: false }
+    ],
+    difficulty: "susah"
+  },
+  {
+    question: "Sikap terbaik menghadapi ujian menurut kedua ayat tersebut adalah...",
+    answers: [
+      { text: "Sabar dan yakin pada Allah", correct: true },
+      { text: "Mengeluh", correct: false },
+      { text: "Putus asa", correct: false },
+      { text: "Menyerah", correct: false }
+    ],
+    difficulty: "susah"
   }
+
 ];
