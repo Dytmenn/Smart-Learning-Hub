@@ -1,6 +1,218 @@
 const materi = {
   judul: "Bahasa Indonesia Kelas XI: Puisi, Cerpen, Drama, dan Karya Ilmiah",
-  deskripsi: "",
+  deskripsi: `Materi ini mencakup empat topik utama Bahasa Indonesia Kelas XI semester 1 dan 2.
+
+    **PUISI**:
+    Puisi adalah karya sastra yang menggunakan kata-kata yang padat, bermakna, dan penuh estetika untuk mengungkapkan perasaan, pengalaman, atau pesan moral penyair.
+
+    **Ciri-ciri puisi**:
+    1. Menggunakan bahasa yang padat, singkat, tetapi bermakna luas.
+    2. Menggunakan majas (gaya bahasa) dan citraan (imaji).
+    3. Terdiri atas baris-baris yang membentuk bait.
+    4. Mengutamakan keindahan bunyi dan pilihan kata (diksi).
+    5. Makna bersifat konotatif dan simbolis.
+
+    **Unsur Batin Puisi**:
+    - Tema: gagasan pokok yang menjiwai seluruh isi puisi.
+    - Perasaan (rasa): sikap penyair terhadap masalah yang diungkapkan.
+    - Nada: sikap penyair terhadap pembaca (menggurui, mengajak, menceritakan).
+    - Amanat: pesan moral yang ingin disampaikan penyair.
+
+    **Unsur Fisik Puisi**:
+    - Diksi: pilihan kata yang tepat dan bermakna.
+    - Imaji/Citraan: gambaran indera yang ditimbulkan oleh kata-kata dalam puisi.
+    - Majas: gaya bahasa untuk memperindah dan memperkuat makna.
+    - Rima: persamaan bunyi di akhir baris.
+    - Ritme: irama dalam pembacaan puisi.
+    - Tipografi: tata letak/bentuk visual puisi.
+
+    **Jenis-Jenis Imaji/Citraan**:
+    - Imaji visual: gambaran yang ditangkap oleh mata (penglihatan).
+    - Imaji auditif: gambaran yang ditangkap oleh telinga (pendengaran).
+    - Imaji taktil/perabaan: gambaran yang dirasakan oleh kulit (suhu, tekstur).
+    - Imaji penciuman: gambaran yang ditangkap oleh hidung.
+    - Imaji pencecapan: gambaran yang ditangkap oleh lidah.
+    - Imaji gerak: gambaran aktivitas atau gerakan.
+
+    **Jenis-Jenis Majas**:
+    - Simile: perbandingan langsung menggunakan kata 'seperti', 'bagai', 'laksana', 'bagaikan'. Contoh: "Bagaikan zamrud khatulistiwa."
+    - Metafora: perbandingan langsung tanpa kata pembanding. Contoh: "Engkau adalah pelita hidupku."
+    - Personifikasi: memberikan sifat manusia pada benda mati. Contoh: "Angin berbisik mesra."
+    - Hiperbola: melebih-lebihkan kenyataan. Contoh: "Tangisnya membasahi seluruh bumi."
+    - Repetisi: pengulangan kata/frasa untuk penekanan. Contoh: "Dinginnya! Dinginnya!"
+    - Sinekdoke: menyebut sebagian untuk keseluruhan atau sebaliknya.
+    - Metonimia: menggunakan nama atribut/sifat sebagai pengganti nama aslinya.
+
+    **Musikalisasi Puisi**:
+    Musikalisasi puisi adalah pembacaan puisi yang diiringi musik. Tujuannya untuk memperindah penyampaian puisi dan memperkuat suasana. Musik yang dipilih harus sesuai dengan suasana dan tema puisi.
+
+    **Tahapan Membaca Puisi**:
+    1. Memahami isi dan makna puisi.
+    2. Menentukan suasana yang ingin ditampilkan.
+    3. Memperhatikan intonasi, jeda, dan ekspresi.
+    4. Berlatih dengan penghayatan penuh.
+
+    **CERPEN (Cerita Pendek)**:
+    Cerpen adalah karya sastra berbentuk prosa fiksi yang mengisahkan suatu peristiwa atau konflik dengan singkat, biasanya hanya berfokus pada satu peristiwa utama.
+
+    **Ciri-ciri Cerpen**:
+    1. Cerita pendek dan bisa dibaca dalam sekali duduk.
+    2. Berfokus pada satu konflik utama.
+    3. Tokoh terbatas.
+    4. Menggunakan alur yang sederhana.
+    5. Pesan bersifat tersirat maupun tersurat.
+
+    **Unsur Intrinsik Cerpen**:
+    - Tema: ide pokok cerita.
+    - Alur: rangkaian peristiwa (maju, mundur, campuran).
+    - Tokoh dan Penokohan: pelaku cerita beserta karakternya.
+    - Latar: tempat, waktu, dan suasana cerita.
+    - Sudut Pandang: posisi pengarang (orang pertama/ketiga).
+    - Amanat/Pesan: pelajaran yang dapat diambil.
+    - Gaya Bahasa: cara pengarang menyampaikan cerita.
+
+    **Tema dan Pesan dalam Cerpen**:
+    - Tema cerpen sering bersifat tersirat (tidak langsung dinyatakan).
+    - Pesan cerpen dapat berupa ajakan, motivasi, atau pelajaran hidup.
+    - Tema dan pesan selalu saling berkaitan dalam cerpen.
+    - Pesan dalam cerpen sering kali bersifat tersirat.
+
+    **Persamaan dan Perbedaan Puisi dan Cerpen**:
+    Persamaan: keduanya dapat menggambarkan perasaan, pengalaman, atau pesan moral.
+    Perbedaan utama: cara menyampaikan ide dan emosi kepada pembaca. Puisi menggunakan diksi, rima, dan imaji; cerpen menggunakan alur, tokoh, dan narasi.
+
+    **Menulis Puisi Berdasarkan Cerpen**:
+    Langkah-langkah: menentukan tema dan pesan utama cerpen → memilih kata-kata yang mewakili emosi dan suasana cerpen → menyaring emosi, nilai, dan makna mendalam → menyusun dalam bentuk bait.
+    Gaya bahasa yang tepat digunakan: padat dan penuh imajinasi khas puisi (bukan naratif seperti cerpen).
+    Unsur cerpen yang paling penting sebagai dasar menulis puisi: tema, suasana, dan pesan moral.
+
+    **Buku Rectoverso (Dewi Lestari)**:
+    Buku karya Dewi Lestari berupa gabungan cerita pendek dan lagu. Berisi sebelas cerita pendek yang masing-masing memiliki lagu. Beberapa judul: "Curhat buat Sahabat", "Malaikat Juga Tahu", "Selamat Ulang Tahun", "Firasat", "Tidur", "Back to Heaven's Light".
+
+    **DRAMA**:
+    Drama adalah karya sastra berupa dialog yang dipentaskan di atas panggung.
+
+    **Unsur Intrinsik Drama**:
+    - Tema: pokok permasalahan yang menjadi dasar cerita.
+    - Alur: rangkaian peristiwa dalam drama (orientasi → komplikasi → resolusi).
+    - Tokoh dan Penokohan: protagonis (mendukung tema), antagonis (menentang tema), tritagonis (penengah).
+    - Latar: tempat, waktu, dan suasana.
+    - Dialog: percakapan antartokoh yang menjadi ciri khas drama.
+    - Amanat: pesan yang ingin disampaikan pengarang.
+    - Konflik: pertentangan yang membangun ketegangan cerita.
+
+    **Unsur Ekstrinsik Drama**:
+    Unsur yang berasal dari luar karya, meliputi: nilai sosial, nilai budaya, nilai agama, latar belakang pengarang, kondisi masyarakat. BUKAN termasuk unsur ekstrinsik: watak tokoh (itu unsur intrinsik).
+
+    **Jenis Konflik Drama**:
+    - Tokoh melawan masyarakat
+    - Tokoh melawan alam
+    - Tokoh dengan struktur sosial
+    - Tokoh dengan nasib dan lingkungan
+    - Tokoh dengan diri sendiri dan tokoh lain
+
+    **Struktur Teks Drama**:
+    1. Prolog: pengantar/pembukaan, termasuk deskripsi kondisi panggung dan setting.
+    2. Dialog: percakapan antartokoh (bagian utama drama).
+    3. Epilog/Resolusi: bagian penutup/penyelesaian konflik.
+    - Orientasi: perkenalan tokoh dan latar.
+    - Komplikasi: munculnya konflik dan masalah.
+    - Resolusi/Klimaks: penyelesaian konflik.
+
+    **Fungsi Dialog dalam Drama**:
+    - Menyampaikan informasi kepada penonton.
+    - Mengungkap karakter tokoh.
+    - Menggerakkan alur cerita.
+    - Menyampaikan pesan moral.
+    BUKAN fungsi dialog: membuat deskripsi panjang tentang latar.
+
+    **Perbedaan Protagonis dan Antagonis**:
+    Perbedaan terletak pada peran tokoh dalam mendukung atau menentang tema utama, bukan pada cara berbicara atau jumlah dialog.
+
+    **Mengenali Watak Tokoh Drama**:
+    Dapat dilihat dari: cara berpikir tokoh, penilaian tokoh lain, apa yang dilakukan pelaku, cara tokoh menghadapi masalah.
+    TIDAK dapat dilihat dari: urutan cerita saja.
+
+    **Adaptasi Cerpen ke Drama**:
+    Yang harus disesuaikan: mengubah dialog narasi menjadi percakapan tokoh, menyesuaikan konflik untuk bisa dipentaskan.
+
+    **Pementasan Drama**:
+    Unsur pementasan: tokoh/aktor, kostum, tata rias, panggung, properti, pencahayaan, musik.
+    Unsur yang TIDAK diperlukan dalam pementasan: citraan, majas (itu unsur teks sastra).
+    Tujuan pementasan drama: memberikan hiburan sekaligus menyampaikan pesan moral.
+
+    **Pamflet Pertunjukan Drama**:
+    Pamflet adalah selebaran berisi informasi pertunjukan drama yang bertujuan menarik calon penonton.
+    Isi pamflet: judul pertunjukan, sinopsis singkat, waktu dan tempat pertunjukan, informasi pemain dan kru produksi.
+    Desain pamflet yang menarik: memiliki ilustrasi atau gambar yang relevan dengan tema drama.
+
+    **KARYA ILMIAH**:
+    Karya ilmiah adalah tulisan yang berisi pembahasan suatu masalah berdasarkan hasil penelitian, disusun menurut metode ilmiah dengan menggunakan bahasa baku.
+
+    **Ciri-ciri Karya Ilmiah**:
+    1. Bersifat objektif (berdasarkan fakta, bukan opini pribadi).
+    2. Menggunakan bahasa baku dan formal.
+    3. Memiliki sistematika yang jelas.
+    4. Menggunakan data yang valid.
+    5. Bersifat logis, rasional, dan empiris.
+    BUKAN ciri karya ilmiah: berdasarkan opini pribadi tanpa fakta.
+
+    **Jenis Karya Ilmiah**:
+    - Makalah: karya ilmiah singkat untuk seminar/tugas.
+    - Skripsi: karya ilmiah untuk S1.
+    - Tesis: karya ilmiah untuk S2.
+    - Disertasi: karya ilmiah untuk S3.
+    BUKAN karya ilmiah: cerpen (itu karya sastra fiksi).
+
+    **Struktur/Sistematika Karya Ilmiah**:
+    1. Pendahuluan: berisi latar belakang, rumusan masalah, tujuan, manfaat.
+    2. Landasan Teori/Tinjauan Pustaka: berisi dasar teori dan referensi penelitian sebelumnya.
+    3. Metode Penelitian: berisi cara pengumpulan dan analisis data.
+    4. Hasil dan Pembahasan: berisi temuan penelitian.
+    5. Kesimpulan: berisi rangkuman isi dan hasil penelitian.
+    6. Daftar Pustaka: daftar sumber referensi.
+    Sistematika TIDAK berisi: humor dan anekdot.
+
+    **Langkah Menulis Karya Ilmiah**:
+    Langkah pertama: menentukan topik dan rumusan masalah.
+
+    **Rumusan Masalah**:
+    Kalimat rumusan masalah berbentuk pertanyaan yang mengarah pada apa yang ingin diteliti.
+    Contoh topik "Pelestarian tanaman obat": rumusan masalah yang tepat = "Apa yang dapat dilakukan untuk melestarikan tanaman obat di masyarakat?"
+
+    **Latar Belakang**:
+    Berisi alasan mengapa topik tersebut penting diteliti, termasuk data atau fakta pendukung.
+    Contoh topik "Perbaikan mental remaja": latar belakang yang sesuai = "Dewasa ini banyak remaja rusak mentalnya disebabkan berbagai faktor."
+
+    **Metode Pengumpulan Data**:
+    - Studi pustaka: menggunakan buku/jurnal.
+    - Observasi: pengamatan langsung.
+    - Wawancara: tanya jawab langsung dengan narasumber.
+    - Angket/Kuesioner: daftar pertanyaan tertulis untuk responden.
+    - Eksperimen: percobaan ilmiah.
+
+    **Penulisan Judul Karya Ilmiah**:
+    Menggunakan huruf kapital di setiap awal kata KECUALI kata sambung (untuk, dan, yang, di, ke, dari).
+
+    **Penulisan Daftar Pustaka (Buku)**:
+    Urutan: Nama penulis (nama belakang dulu). Tahun terbit. Judul buku (cetak miring). Kota terbit: Nama Penerbit.
+    Contoh yang benar: Koentjaraningrat. 2019. Kebudayaan Mentalitas dan Pembangunan. Jakarta: Gramedia.
+
+    **Topik Karya Ilmiah yang Baik**:
+    - Aktual dan relevan.
+    - Dapat diteliti/dikaji.
+    - Tersedia sumber datanya.
+    - Sesuai dengan kemampuan penulis.
+
+    **Plagiarisme**:
+    Mengambil karya/tulisan orang lain tanpa mencantumkan sumber disebut plagiarisme. Dampaknya: dianggap plagiat dan dapat berakibat pada sanksi akademik.
+
+    **Seleksi Data Kuesioner**:
+    Jika ditemukan data kuesioner yang tidak valid (asal-asalan), yang sebaiknya dilakukan: melakukan seleksi terhadap data yang masuk dan mengeliminasi jawaban yang tidak relevan.
+
+    **Kutipan Karya Ilmiah**:
+    Informasi yang disampaikan dalam karya ilmiah harus berdasarkan data dan fakta. Contoh: dari kutipan teks tentang pohon lontar, informasi utama = penyebaran wilayah pohon lontar.
+  `,
 };
 
 const soal = [
