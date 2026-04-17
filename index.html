@@ -29,6 +29,35 @@
                         </label>
                     </div>
                 </div>
+
+                <div class="option-item">
+                    <h3>Pengaturan Waktu:</h3>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="timer-mode" value="unlimited" checked onchange="toggleTimerDuration()">
+                            <span>Timer tanpa batas</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="timer-mode" value="limited" onchange="toggleTimerDuration()">
+                            <span>Timer dengan batas waktu</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div id="timer-duration-section" class="option-item" style="display: none;">
+                    <div class="timer-duration-header">
+                        <div>
+                            <label for="timer-duration" style="display: block; margin-bottom: 0.25rem;">Batas Waktu</label>
+                            <div style="display: flex; align-items: baseline; gap: 0.5rem;">
+                                <span id="timer-duration-value" style="font-size: 1.4rem;">25</span>
+                                <span style="font-size: 0.95rem; color: var(--text-secondary);">menit</span>
+                            </div>
+                        </div>
+                        <span class="timer-max-label">Maks. 30 menit</span>
+                    </div>
+                    <input type="range" id="timer-duration" min="1" max="30" value="25" class="timer-slider">
+                    <small>Kuis akan otomatis selesai ketika waktu habis</small>
+                </div>
             </div>
             <div class="modal-box-actions">
                 <button onclick="startQuizWithOptions()" class="btn-primary">
