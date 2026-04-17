@@ -1,6 +1,6 @@
 // Global variables
 let currentQuestions = [];
-let originalQuestions = []; // Store original questions for reshuffling
+let originalQuestions = [];
 let currentMateri = "";
 let currentQuestionIndex = 0;
 let score = 0;
@@ -9,164 +9,112 @@ let wrongAnswers = 0;
 let startTime = 0;
 let timerInterval = null;
 let userAnswers = {};
-let showAnswersImmediately = false; // CHANGED: Default to showing answers at the end
+let flaggedQuestions = new Set();
+let showAnswersImmediately = false;
+let isMobile = window.innerWidth <= 768;
 
 // Theme management
 const themeToggle = document.getElementById('theme-toggle');
-const body = document.body;
 
-// Initialize theme (remove localStorage usage)
 function initTheme() {
-    // Default to dark theme without localStorage
-    body.setAttribute('data-theme', 'dark');
+    document.body.setAttribute('data-theme', 'dark');
     updateThemeIcon('dark');
 }
 
 function updateThemeIcon(theme) {
-    const icon = themeToggle.querySelector('i');
-    icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+    const icon = themeToggle ? themeToggle.querySelector('i') : null;
+    if (icon) icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
 }
 
-themeToggle.addEventListener('click', () => {
-    const currentTheme = body.getAttribute('data-theme');
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    
-    body.setAttribute('data-theme', newTheme);
-    updateThemeIcon(newTheme);
-});
+if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+        const current = document.body.getAttribute('data-theme');
+        const next = current === 'dark' ? 'light' : 'dark';
+        document.body.setAttribute('data-theme', next);
+        updateThemeIcon(next);
+    });
+}
 
-// Initialize app
-document.addEventListener('DOMContentLoaded', () => {
-    initTheme();
-});
-
-// Navigation functions - Fixed blinking issue
-function showContainer(containerId) {
-    const containers = ['menu-container', 'materi-container', 'quiz-container'];
-    
-    // Hide all containers immediately without transition
-    containers.forEach(id => {
-        const element = document.getElementById(id);
-        if (id !== containerId) {
-            element.style.display = 'none';
+// Page navigation
+function showPage(pageId) {
+    const pages = ['menu-page', 'materi-page', 'quiz-page'];
+    pages.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) {
+            el.style.display = id === pageId ? 'flex' : 'none';
+            el.style.flexDirection = 'column';
         }
     });
-    
-    // Show target container with smooth transition
-    const targetContainer = document.getElementById(containerId);
-    targetContainer.style.opacity = '0';
-    targetContainer.style.display = 'block';
-    
-    // Force reflow before animation
-    targetContainer.offsetHeight;
-    
-    // Animate in
-    setTimeout(() => {
-        targetContainer.style.transition = 'opacity 0.3s ease';
-        targetContainer.style.opacity = '1';
-    }, 10);
 }
 
-// MODIFIED: Add full page refresh when going back to home
 function backToMenu() {
-    // Use window.location.reload() to perform a full page refresh
     window.location.reload();
 }
 
 function backToMateri() {
-    showContainer('materi-container');
+    showPage('materi-page');
     resetQuizState();
 }
 
-// Shuffle array function
+// Shuffle helpers
 function shuffleArray(array) {
-    const shuffled = [...array];
-    for (let i = shuffled.length - 1; i > 0; i--) {
+    const s = [...array];
+    for (let i = s.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
-        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+        [s[i], s[j]] = [s[j], s[i]];
     }
-    return shuffled;
+    return s;
 }
 
-// Shuffle answers in a question
 function shuffleAnswers(question) {
-    const shuffledQuestion = { ...question };
-    shuffledQuestion.answers = shuffleArray(question.answers);
-    return shuffledQuestion;
+    return { ...question, answers: shuffleArray(question.answers) };
 }
 
+// Load subject
 function loadMateri(mapel) {
-    // Reset semua state terkait materi
-    resetMateriState();
+    resetAllState();
 
-    // Hapus semua script mapel sebelumnya
-    document.querySelectorAll('script[data-mapel]').forEach(script => script.remove());
+    document.querySelectorAll('script[data-mapel]').forEach(s => s.remove());
 
-    // Reset global variables untuk memastikan data sebelumnya terhapus
-    originalQuestions = [];
-    currentQuestions = [];
-    currentMateri = "";
-
-    // Script element dengan timeout untuk memastikan script berhasil diload
     const script = document.createElement('script');
     script.src = `mapel/${mapel}.js`;
     script.setAttribute('data-mapel', mapel);
     script.setAttribute('id', `script-${mapel}`);
 
-    // Tambahkan timeout untuk memeriksa apakah variabel tersedia
     let checkTimeout;
-    
+
     script.onload = () => {
-        // Cek materi dan soal dengan interval untuk memberi waktu script dijalankan
         checkTimeout = setTimeout(() => {
-            // Cek apakah variabel materi dan soal tersedia
-            if (typeof materi !== 'undefined' && typeof soal !== 'undefined') {
-                showContainer('materi-container');
-                document.getElementById("judul-materi").innerText = materi.judul;
-                document.getElementById("isi-materi").innerText = materi.deskripsi;
+            const m = typeof materi !== 'undefined' ? materi : window.materi;
+            const s = typeof soal !== 'undefined' ? soal : window.soal;
 
-                originalQuestions = [...soal];
-                currentQuestions = shuffleArray(originalQuestions.map(q => shuffleAnswers(q)));
-                currentMateri = materi.judul;
-                document.getElementById('materi-progress').style.width = '50%';
+            if (m && s) {
+                document.getElementById("judul-materi").innerText = m.judul;
+                document.getElementById("isi-materi").innerText = m.deskripsi;
+                originalQuestions = [...s];
+                currentQuestions = shuffleArray(s.map(q => shuffleAnswers(q)));
+                currentMateri = m.judul;
+                showPage('materi-page');
             } else {
-                // Coba cek pada window jika tidak tersedia di scope global
-                if (typeof window.materi !== 'undefined' && typeof window.soal !== 'undefined') {
-                    showContainer('materi-container');
-                    document.getElementById("judul-materi").innerText = window.materi.judul;
-                    document.getElementById("isi-materi").innerText = window.materi.deskripsi;
+                showNotification('Materi untuk mata pelajaran ini belum tersedia.', 'warning');
+            }
 
-                    originalQuestions = [...window.soal];
-                    currentQuestions = shuffleArray(originalQuestions.map(q => shuffleAnswers(q)));
-                    currentMateri = window.materi.judul;
-                    document.getElementById('materi-progress').style.width = '50%';
-                } else {
-                    showNotification('Materi untuk mata pelajaran ini belum tersedia.', 'warning');
-                    console.error('Tidak bisa menemukan variabel materi dan soal untuk: ' + mapel);
-                }
-            }
-            
-            // Hapus script setelah diproses
-            if (document.getElementById(`script-${mapel}`)) {
-                document.body.removeChild(document.getElementById(`script-${mapel}`));
-            }
-        }, 100); // Berikan waktu 100ms untuk script dieksekusi
+            const sc = document.getElementById(`script-${mapel}`);
+            if (sc) document.body.removeChild(sc);
+        }, 100);
     };
 
     script.onerror = () => {
         showNotification('Gagal memuat materi. Silakan coba lagi.', 'error');
-        console.error('Error loading: mapel/' + mapel + '.js');
         clearTimeout(checkTimeout);
-        if (document.getElementById(`script-${mapel}`)) {
-            document.body.removeChild(document.getElementById(`script-${mapel}`));
-        }
+        const sc = document.getElementById(`script-${mapel}`);
+        if (sc) document.body.removeChild(sc);
     };
 
     document.body.appendChild(script);
 }
 
-// Fungsi untuk mereset state materi
-function resetMateriState() {
+function resetAllState() {
     originalQuestions = [];
     currentQuestions = [];
     currentMateri = "";
@@ -175,49 +123,11 @@ function resetMateriState() {
     correctAnswers = 0;
     wrongAnswers = 0;
     userAnswers = {};
+    flaggedQuestions = new Set();
     clearInterval(timerInterval);
     startTime = 0;
 }
 
-// MODIFIED: Update mulaiKuis to set the correct default option
-function mulaiKuis() {
-    if (currentQuestions.length === 0) {
-        showNotification('Tidak ada soal yang tersedia untuk mata pelajaran ini.', 'warning');
-        return;
-    }
-    
-    // Set the default radio button to "end" (Di akhir kuis)
-    const radioButtons = document.querySelectorAll('input[name="answer-display"]');
-    radioButtons.forEach(radio => {
-        if (radio.value === 'end') {
-            radio.checked = true;
-        } else {
-            radio.checked = false;
-        }
-    });
-    
-    // Tampilkan modal pilihan
-    document.getElementById('quiz-options-modal').style.display = 'flex';
-}
-
-function startQuizWithOptions() {
-    const selectedOption = document.querySelector('input[name="answer-display"]:checked').value;
-    showAnswersImmediately = selectedOption === 'immediate';
-    
-    document.getElementById('quiz-options-modal').style.display = 'none';
-    
-    // Reshuffle questions and answers
-    currentQuestions = shuffleArray(originalQuestions.map(q => shuffleAnswers(q)));
-    userAnswers = {}; // Reset jawaban user
-    
-    showContainer('quiz-container');
-    document.getElementById("kuis-title").innerText = currentMateri;
-    resetQuizState();
-    startTimer();
-    showQuestion();
-}
-
-// Fungsi untuk mereset state kuis
 function resetQuizState() {
     currentQuestionIndex = 0;
     score = 0;
@@ -227,489 +137,364 @@ function resetQuizState() {
     startTime = 0;
 }
 
-// Timer functions
+// Start quiz modal
+function mulaiKuis() {
+    if (currentQuestions.length === 0) {
+        showNotification('Tidak ada soal yang tersedia.', 'warning');
+        return;
+    }
+    const radios = document.querySelectorAll('input[name="answer-display"]');
+    radios.forEach(r => { r.checked = r.value === 'end'; });
+    document.getElementById('quiz-options-modal').style.display = 'flex';
+}
+
+function startQuizWithOptions() {
+    const selected = document.querySelector('input[name="answer-display"]:checked').value;
+    showAnswersImmediately = selected === 'immediate';
+    document.getElementById('quiz-options-modal').style.display = 'none';
+
+    currentQuestions = shuffleArray(originalQuestions.map(q => shuffleAnswers(q)));
+    userAnswers = {};
+    flaggedQuestions = new Set();
+
+    showPage('quiz-page');
+    document.getElementById("kuis-title").innerText = currentMateri;
+    document.getElementById("statusbar-subject").innerText = currentMateri;
+    resetQuizState();
+    buildNavGrid();
+    startTimer();
+    showQuestion();
+}
+
+// Timer
 function startTimer() {
     startTime = Date.now();
-    timerInterval = setInterval(updateTimer, 1000);
+    timerInterval = setInterval(() => {
+        const elapsed = Math.floor((Date.now() - startTime) / 1000);
+        const m = Math.floor(elapsed / 60);
+        const s = elapsed % 60;
+        const timerEl = document.getElementById('timer');
+        if (timerEl) timerEl.textContent = `${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+    }, 1000);
 }
 
-function updateTimer() {
-    const elapsed = Math.floor((Date.now() - startTime) / 1000);
-    const minutes = Math.floor(elapsed / 60);
-    const seconds = elapsed % 60;
-    document.getElementById('timer').textContent = 
-        `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+function stopTimer() { clearInterval(timerInterval); }
+
+// Navigation grid
+function buildNavGrid() {
+    const grid = document.getElementById('nav-grid');
+    if (!grid) return;
+    grid.innerHTML = '';
+    currentQuestions.forEach((_, i) => {
+        const btn = document.createElement('button');
+        btn.className = 'nav-btn';
+        btn.textContent = i + 1;
+        btn.onclick = () => { currentQuestionIndex = i; showQuestion(); };
+        btn.id = `nav-btn-${i}`;
+        grid.appendChild(btn);
+    });
+    updateNavGrid();
 }
 
-function stopTimer() {
-    clearInterval(timerInterval);
+function updateNavGrid() {
+    currentQuestions.forEach((_, i) => {
+        const btn = document.getElementById(`nav-btn-${i}`);
+        if (!btn) return;
+        btn.className = 'nav-btn';
+        if (i === currentQuestionIndex) {
+            btn.classList.add('nav-active');
+        } else if (flaggedQuestions.has(i)) {
+            btn.classList.add('nav-flagged');
+        } else if (userAnswers[i]) {
+            btn.classList.add('nav-answered');
+        }
+    });
 }
 
-// Perbaikan fungsi showQuestion untuk menampilkan jawaban yang sudah dipilih
+// Flag
+function toggleFlag() {
+    const btn = document.getElementById('flag-btn');
+    if (flaggedQuestions.has(currentQuestionIndex)) {
+        flaggedQuestions.delete(currentQuestionIndex);
+        if (btn) btn.classList.remove('flagged');
+    } else {
+        flaggedQuestions.add(currentQuestionIndex);
+        if (btn) btn.classList.add('flagged');
+    }
+    updateNavGrid();
+}
+
+// Show question
 function showQuestion() {
     if (currentQuestionIndex >= currentQuestions.length) {
-        if (!showAnswersImmediately) {
-            showAllAnswers();
-        }
+        if (!showAnswersImmediately) showAllAnswers();
         endQuiz();
         return;
     }
 
-    resetAnswerState();
-    const currentQuestion = currentQuestions[currentQuestionIndex];
+    const q = currentQuestions[currentQuestionIndex];
 
-    updateQuizProgress();
+    // Question label
+    const label = document.getElementById('question-label');
+    if (label) label.textContent = `Soal ${currentQuestionIndex + 1}`;
 
-    const questionElement = document.getElementById("question");
-    questionElement.innerHTML = `
-        <div class="question-content">
-            <div class="question-text-main">${currentQuestion.question}</div>
-        </div>
-    `;
+    // Flag state
+    const flagBtn = document.getElementById('flag-btn');
+    if (flagBtn) {
+        flagBtn.classList.toggle('flagged', flaggedQuestions.has(currentQuestionIndex));
+    }
 
-    const answerButtons = document.getElementById("answer-buttons");
-    answerButtons.innerHTML = "";
+    // Progress
+    updateProgress();
 
-    currentQuestion.answers.forEach((answer, index) => {
-        const button = document.createElement("button");
-        button.innerText = answer.text;
-        button.classList.add("answer-btn");
-        button.dataset.correct = answer.correct;
-        button.addEventListener("click", selectAnswer);
-        
-        // Tandai jawaban yang sudah dipilih sebelumnya
-        if (userAnswers[currentQuestionIndex] && 
-            userAnswers[currentQuestionIndex].selected === answer.text) {
-            
-            if (showAnswersImmediately) {
-                // Jika mode jawaban langsung, tampilkan benar/salah
-                if (userAnswers[currentQuestionIndex].isCorrect) {
-                    button.classList.add("correct");
+    // Question text
+    const qEl = document.getElementById("question");
+    if (qEl) qEl.innerHTML = `<div class="question-content">${q.question}</div>`;
+
+    // Answers
+    const ansEl = document.getElementById("answer-buttons");
+    if (ansEl) {
+        ansEl.innerHTML = '';
+        const letters = ['A', 'B', 'C', 'D', 'E', 'F'];
+        q.answers.forEach((answer, idx) => {
+            const btn = document.createElement("button");
+            btn.className = "answer-btn";
+            btn.dataset.correct = answer.correct;
+
+            btn.innerHTML = `<span class="answer-letter">${letters[idx]}.</span>${answer.text}`;
+            btn.addEventListener("click", selectAnswer);
+
+            // Restore previous answer state
+            if (userAnswers[currentQuestionIndex] &&
+                userAnswers[currentQuestionIndex].selected === answer.text) {
+                if (showAnswersImmediately) {
+                    btn.classList.add(userAnswers[currentQuestionIndex].isCorrect ? "correct" : "incorrect");
+                    setTimeout(() => {
+                        Array.from(document.getElementById("answer-buttons").children).forEach(b => {
+                            b.disabled = true;
+                            if (b.dataset.correct === "true") b.classList.add("correct");
+                        });
+                    }, 0);
                 } else {
-                    button.classList.add("incorrect");
+                    btn.classList.add("selected");
                 }
-                
-                // Dalam mode jawaban langsung, tampilkan semua jawaban yang benar dan disable tombol
-                Array.from(currentQuestion.answers).forEach((ans, i) => {
-                    if (ans.correct) {
-                        if (i !== index) {
-                            // Tandai jawaban benar lainnya saat nanti dibuat
-                            setTimeout(() => {
-                                const correctButton = answerButtons.children[i];
-                                if (correctButton) correctButton.classList.add("correct");
-                            }, 0);
-                        }
-                    }
-                });
-                
-                // Disable semua tombol dalam mode jawaban langsung jika sudah dijawab
-                setTimeout(() => {
-                    Array.from(answerButtons.children).forEach(btn => {
-                        btn.disabled = true;
-                    });
-                }, 0);
-            } else {
-                // Jika mode jawaban di akhir, hanya tandai sebagai dipilih
-                button.classList.add("selected");
             }
-        }
-        
-        answerButtons.appendChild(button);
-    });
 
-    // Tampilkan tombol next jika sudah ada jawaban
-    if (userAnswers[currentQuestionIndex]) {
-        document.getElementById("next-btn").style.display = "inline-flex";
+            ansEl.appendChild(btn);
+        });
     }
 
-    const difficultyDiv = document.getElementById("difficulty");
-    difficultyDiv.innerHTML = `
-        <div class="difficulty-indicator">
-            <i class="fas fa-chart-bar"></i>
-            <span>Kesulitan: ${getDifficultyText(currentQuestion.difficulty || 'medium')}</span>
-        </div>
-    `;
+    // Difficulty
+    const diffEl = document.getElementById("difficulty");
+    if (diffEl) {
+        diffEl.innerHTML = `
+            <div class="difficulty-indicator">
+                <i class="fas fa-chart-bar"></i>
+                <span>Kesulitan: ${getDifficultyText(q.difficulty || 'medium')}</span>
+            </div>`;
+    }
 
+    // Nav buttons
     const prevBtn = document.getElementById("prev-btn");
-    prevBtn.style.display = currentQuestionIndex > 0 ? "inline-flex" : "none";
-    document.getElementById('score').textContent = `Skor: ${score}`;
+    const nextBtn = document.getElementById("next-btn");
+    if (prevBtn) prevBtn.style.display = currentQuestionIndex > 0 ? "inline-flex" : "none";
+    if (nextBtn) nextBtn.style.display = userAnswers[currentQuestionIndex] ? "inline-flex" : "none";
+
+    // Score
+    const scoreEl = document.getElementById('score');
+    if (scoreEl) scoreEl.textContent = `Skor: ${score}`;
+
+    // Update nav grid
+    updateNavGrid();
 }
 
-// Get difficulty text with proper formatting
-function getDifficultyText(difficulty) {
-    const difficultyMap = {
-        'easy': 'Mudah',
-        'medium': 'Sedang',
-        'hard': 'susah',
-        'mudah': 'Mudah',
-        'sedang': 'Sedang',
-        'susah': 'Susah'
-    };
-    return difficultyMap[difficulty.toLowerCase()] || 'Sedang';
+function getDifficultyText(d) {
+    return { easy:'Mudah', medium:'Sedang', hard:'Susah', mudah:'Mudah', sedang:'Sedang', susah:'Susah' }[d.toLowerCase()] || 'Sedang';
 }
 
-function updateQuizProgress() {
-    const progress = ((currentQuestionIndex + 1) / currentQuestions.length) * 100;
-    document.getElementById('quiz-progress').style.width = `${progress}%`;
-    document.getElementById('progress-text').textContent = 
-        `Pertanyaan ${currentQuestionIndex + 1} dari ${currentQuestions.length}`;
+function updateProgress() {
+    const answeredCount = Object.keys(userAnswers).length;
+    const pct = (answeredCount / currentQuestions.length) * 100;
+    const bar = document.getElementById('quiz-progress');
+    if (bar) bar.style.width = `${pct}%`;
+    const txt = document.getElementById('progress-text');
+    if (txt) txt.textContent = `${answeredCount} dari ${currentQuestions.length}`;
 }
 
-function resetAnswerState() {
-    document.getElementById("next-btn").style.display = "none";
-    const answerButtons = document.getElementById("answer-buttons");
-    while (answerButtons.firstChild) {
-        answerButtons.firstChild.remove();
-    }
-}
-
-// Perbaikan fungsi selectAnswer
 function selectAnswer(e) {
-    const selectedBtn = e.target;
-    const isCorrect = selectedBtn.dataset.correct === "true";
-    
-    // Reset status semua tombol jawaban terlebih dahulu
-    Array.from(document.getElementById("answer-buttons").children).forEach(button => {
-        button.classList.remove("selected", "correct", "incorrect");
-        button.disabled = false;
-    });
-    
-    // Simpan jawaban user
-    userAnswers[currentQuestionIndex] = {
-        selected: selectedBtn.innerText,
-        isCorrect: isCorrect
-    };
-    
+    const selected = e.currentTarget;
+    const isCorrect = selected.dataset.correct === "true";
+
+    // Reset all
+    const all = document.getElementById("answer-buttons").children;
+    Array.from(all).forEach(b => b.classList.remove("selected","correct","incorrect"));
+
+    userAnswers[currentQuestionIndex] = { selected: selected.querySelector('.answer-letter').nextSibling ? selected.textContent.trim().substring(2).trim() : selected.innerText, isCorrect };
+    // Fix: store actual answer text
+    const letter = selected.querySelector('.answer-letter').textContent;
+    const text = selected.textContent.replace(letter, '').trim();
+    userAnswers[currentQuestionIndex].selected = text;
+
     if (showAnswersImmediately) {
-        // Mode tampilkan jawaban langsung
-        if (isCorrect) {
-            correctAnswers++;
-            score += 10;
-            selectedBtn.classList.add("correct");
-        } else {
-            wrongAnswers++;
-            selectedBtn.classList.add("incorrect");
-        }
-        
-        // Tampilkan jawaban yang benar dan disable semua tombol
-        Array.from(document.getElementById("answer-buttons").children).forEach(button => {
-            button.disabled = true;
-            if (button.dataset.correct === "true") {
-                button.classList.add("correct");
-            }
+        if (isCorrect) { correctAnswers++; score += 10; selected.classList.add("correct"); }
+        else { wrongAnswers++; selected.classList.add("incorrect"); }
+        Array.from(all).forEach(b => {
+            b.disabled = true;
+            if (b.dataset.correct === "true") b.classList.add("correct");
         });
     } else {
-        // Mode tampilkan jawaban di akhir - hanya tandai yang dipilih
-        selectedBtn.classList.add("selected");
-        
-        // Jangan disable tombol agar user bisa ganti jawaban
-        Array.from(document.getElementById("answer-buttons").children).forEach(button => {
-            // Tidak perlu disable buttons
-        });
+        selected.classList.add("selected");
     }
-    
-    // Animasi dan scroll
-    selectedBtn.style.transform = "scale(0.95)";
-    setTimeout(() => {
-        selectedBtn.style.transform = "scale(1)";
-        // Scroll ke tombol selanjutnya
-        document.getElementById("next-btn").scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    }, 150);
-    
-    // Tampilkan tombol selanjutnya
-    document.getElementById("next-btn").style.display = "inline-flex";
-    
-    // Update skor hanya untuk mode jawaban langsung
+
+    const nextBtn = document.getElementById("next-btn");
+    if (nextBtn) nextBtn.style.display = "inline-flex";
+
     if (showAnswersImmediately) {
-        document.getElementById('score').textContent = `Skor: ${score}`;
+        const scoreEl = document.getElementById('score');
+        if (scoreEl) scoreEl.textContent = `Skor: ${score}`;
     }
+
+    updateNavGrid();
 }
 
-// Fungsi baru untuk menampilkan semua jawaban di akhir (jika opsi dipilih)
 function showAllAnswers() {
-    // Reset counters to ensure accurate calculation
-    correctAnswers = 0;
-    wrongAnswers = 0;
-    score = 0;
-    
+    correctAnswers = 0; wrongAnswers = 0; score = 0;
     for (let i = 0; i < currentQuestions.length; i++) {
         if (userAnswers[i]) {
-            const userAnswer = userAnswers[i];
-            
-            if (userAnswer.isCorrect) {
-                score += 10;
-                correctAnswers++;
-            } else {
-                wrongAnswers++;
-            }
+            if (userAnswers[i].isCorrect) { score += 10; correctAnswers++; }
+            else wrongAnswers++;
         } else {
-            // Count unanswered questions as wrong
             wrongAnswers++;
         }
     }
-    
-    // Update the score display
-    document.getElementById('score').textContent = `Skor: ${score}`;
 }
 
-// Event listeners
-document.getElementById("next-btn").addEventListener("click", () => {
-    currentQuestionIndex++;
-    showQuestion();
-});
+// Event listeners for next/prev
+document.addEventListener('DOMContentLoaded', () => {
+    initTheme();
+    showPage('menu-page');
 
-// Navigasi ke soal sebelumnya
-document.getElementById("prev-btn").addEventListener("click", () => {
-    if (currentQuestionIndex > 0) {
-        currentQuestionIndex--;
-        showQuestion();
+    const nextBtn = document.getElementById("next-btn");
+    if (nextBtn) {
+        nextBtn.addEventListener("click", () => {
+            currentQuestionIndex++;
+            showQuestion();
+        });
+    }
+
+    const prevBtn = document.getElementById("prev-btn");
+    if (prevBtn) {
+        prevBtn.addEventListener("click", () => {
+            if (currentQuestionIndex > 0) { currentQuestionIndex--; showQuestion(); }
+        });
+    }
+
+    // Update isMobile on window resize
+    window.addEventListener('resize', () => {
+        isMobile = window.innerWidth <= 768;
+    });
+
+    // Add touch gesture support for swiping between questions
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    const quizPage = document.getElementById('quiz-page');
+    if (quizPage) {
+        quizPage.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, false);
+
+        quizPage.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        }, false);
+    }
+
+    function handleSwipe() {
+        const minDistance = 50;
+        if (touchStartX - touchEndX > minDistance) {
+            // Swiped left - next question
+            const nextBtn = document.getElementById("next-btn");
+            if (nextBtn && nextBtn.style.display !== 'none') nextBtn.click();
+        } else if (touchEndX - touchStartX > minDistance) {
+            // Swiped right - previous question
+            const prevBtn = document.getElementById("prev-btn");
+            if (prevBtn && prevBtn.style.display !== 'none') prevBtn.click();
+        }
     }
 });
 
-// End quiz and show results
+function openFinishQuizModal() {
+    document.getElementById('finish-quiz-modal').style.display = 'flex';
+}
+
+function closeFinishQuizModal() {
+    document.getElementById('finish-quiz-modal').style.display = 'none';
+}
+
+function confirmFinishQuiz() {
+    document.getElementById('finish-quiz-modal').style.display = 'none';
+    if (!showAnswersImmediately) showAllAnswers();
+    endQuiz();
+}
+
+function finishQuiz() {
+    openFinishQuizModal();
+}
+
 function endQuiz() {
     stopTimer();
     const totalTime = Math.floor((Date.now() - startTime) / 1000);
-    const minutes = Math.floor(totalTime / 60);
-    const seconds = totalTime % 60;
-    const percentage = Math.round((correctAnswers / currentQuestions.length) * 100);
-    
-    // Update result modal
+    const m = Math.floor(totalTime / 60);
+    const s = totalTime % 60;
+    const pct = currentQuestions.length > 0 ? Math.round((correctAnswers / currentQuestions.length) * 100) : 0;
+
     document.getElementById('correct-count').textContent = correctAnswers;
     document.getElementById('wrong-count').textContent = wrongAnswers;
-    document.getElementById('final-score').textContent = `${percentage}%`;
-    document.getElementById('total-time').textContent = 
-        `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
-    
-    // Show results modal
+    document.getElementById('final-score').textContent = `${pct}%`;
+    document.getElementById('total-time').textContent = `${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
     document.getElementById('results-modal').style.display = 'flex';
 }
 
 function restartQuiz() {
     document.getElementById('results-modal').style.display = 'none';
-    mulaiKuis(); // This will reshuffle questions and answers
+    mulaiKuis();
 }
 
-// Add smooth scrolling and animations
-function addSmoothTransitions() {
-    const style = document.createElement('style');
-    style.textContent = `
-        .container > div {
-            transition: opacity 0.3s ease;
-        }
-        
-        .fade-in {
-            animation: fadeInUp 0.5s ease-out;
-        }
-        
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        .bounce {
-            animation: bounce 0.6s ease;
-        }
-        
-        @keyframes bounce {
-            0%, 20%, 60%, 100% {
-                transform: translateY(0);
-            }
-            40% {
-                transform: translateY(-10px);
-            }
-            80% {
-                transform: translateY(-5px);
-            }
-        }
-        
-        .question-content {
-            padding: 0;
-        }
-        
-        .question-text-main {
-            font-size: 1.2rem;
-            font-weight: 500;
-            margin-bottom: 1rem;
-            line-height: 1.6;
-        }
-        
-        .difficulty-indicator {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.5rem 1rem;
-            background: var(--bg-secondary);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-            margin-bottom: 1rem;
-            margin-left: 1rem;
-            width: fit-content;
-        }
-        
-        .difficulty-indicator i {
-            color: var(--accent-color);
-        }
-    `;
-    document.head.appendChild(style);
-}
-
-// Initialize animations
-document.addEventListener('DOMContentLoaded', () => {
-    addSmoothTransitions();
-});
-
-// Add keyboard navigation
-document.addEventListener('keydown', (e) => {
-    // Only handle keyboard events when quiz is active and not in a modal
-    const quizContainerVisible = document.getElementById('quiz-container').style.display === 'block';
-    const modalVisible = document.getElementById('quiz-options-modal').style.display === 'flex' || 
-                         document.getElementById('results-modal').style.display === 'flex';
-    
-    if (quizContainerVisible && !modalVisible) {
-        const answerButtons = document.querySelectorAll('.answer-btn:not(:disabled)');
-        const nextButton = document.getElementById('next-btn');
-        
-        // Number keys 1-4 for answer selection
-        if (e.key >= '1' && e.key <= '4') {
-            const index = parseInt(e.key) - 1;
-            if (answerButtons[index]) {
-                e.preventDefault(); // Prevent default action
-                answerButtons[index].click();
-            }
-        }
-        
-        // Enter or Space for next question
-        if ((e.key === 'Enter' || e.key === ' ') && nextButton.style.display !== 'none') {
-            e.preventDefault();
-            nextButton.click();
-        }
-        
-        // Escape to go back - with confirmation
-        if (e.key === 'Escape') {
-            e.preventDefault();
-            if (confirm('Kembali ke materi? Progres kuis akan hilang.')) {
-                backToMateri();
-            }
-        }
-    }
-});
-
-// Add touch/swipe support for mobile
-let touchStartX = 0;
-let touchEndX = 0;
-
-document.addEventListener('touchstart', e => {
-    touchStartX = e.changedTouches[0].screenX;
-});
-
-document.addEventListener('touchend', e => {
-    touchEndX = e.changedTouches[0].screenX;
-    handleSwipe();
-});
-
-function handleSwipe() {
-    const swipeThreshold = 100; // Increased threshold for more intentional swipes
-    const diff = touchStartX - touchEndX;
-    
-    // Only process swipes that are significant and intentional
-    if (Math.abs(diff) > swipeThreshold) {
-        // Make sure we're not in the middle of answering a question
-        const answerButtonsDisabled = document.querySelectorAll('.answer-btn:disabled').length > 0;
-        const nextButtonVisible = document.getElementById('next-btn').style.display !== 'none';
-        
-        // Swipe left - next question (if available)
-        if (diff > 0 && nextButtonVisible) {
-            document.getElementById('next-btn').click();
-        }
-        // Swipe right - go back (only if not actively answering)
-        else if (diff < 0 && !answerButtonsDisabled) {
-            // Add confirmation for back navigation to prevent accidental navigation
-            if (document.getElementById('quiz-container').style.display === 'block') {
-                if (confirm('Kembali ke materi? Progres kuis akan hilang.')) {
-                    backToMateri();
-                }
-            } else if (document.getElementById('materi-container').style.display === 'block') {
-                backToMenu();
-            }
-        }
-    }
-}
-
-// Performance optimization - improved caching without localStorage
-const scriptCache = new Map();
-
-// Notification system
+// Notifications
 function showNotification(message, type = 'info') {
-    const notification = document.createElement('div');
-    notification.style.cssText = `
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        padding: 1rem 1.5rem;
-        border-radius: 8px;
-        color: white;
-        font-weight: 500;
-        z-index: 9999;
-        max-width: 300px;
-        animation: slideInRight 0.3s ease;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-    `;
-    
-    switch (type) {
-        case 'success':
-            notification.style.background = 'var(--success-color)';
-            break;
-        case 'warning':
-            notification.style.background = 'var(--accent-color)';
-            break;
-        case 'error':
-            notification.style.background = 'var(--danger-color)';
-            break;
-        default:
-            notification.style.background = 'var(--primary-color)';
-    }
-    
-    notification.textContent = message;
-    document.body.appendChild(notification);
-    
-    setTimeout(() => {
-        notification.style.animation = 'slideOutRight 0.3s ease';
-        setTimeout(() => notification.remove(), 300);
-    }, 3000);
+    const n = document.createElement('div');
+    const colors = { success: '#22c55e', warning: '#f59e0b', error: '#ef4444', info: '#3b82f6' };
+    n.style.cssText = `position:fixed;top:20px;right:20px;padding:.75rem 1.25rem;border-radius:8px;color:white;font-weight:500;z-index:99999;max-width:300px;box-shadow:0 4px 12px rgba(0,0,0,.2);background:${colors[type]||colors.info};animation:slideInRight .3s ease;font-size:.875rem;`;
+    n.textContent = message;
+    document.body.appendChild(n);
+    setTimeout(() => { n.style.opacity = '0'; n.style.transition = 'opacity .3s'; setTimeout(() => n.remove(), 300); }, 3000);
 }
 
-// Add notification animations
-const notificationStyles = document.createElement('style');
-notificationStyles.textContent = `
-    @keyframes slideInRight {
-        from {
-            transform: translateX(100%);
-            opacity: 0;
+// Keyboard navigation
+document.addEventListener('keydown', (e) => {
+    const quizVisible = document.getElementById('quiz-page') && document.getElementById('quiz-page').style.display !== 'none';
+    const modalVisible = document.getElementById('quiz-options-modal').style.display === 'flex' ||
+                         document.getElementById('results-modal').style.display === 'flex';
+
+    if (quizVisible && !modalVisible) {
+        const answerBtns = document.querySelectorAll('.answer-btn:not(:disabled)');
+        const nextBtn = document.getElementById('next-btn');
+
+        if (e.key >= '1' && e.key <= '5') {
+            const idx = parseInt(e.key) - 1;
+            if (answerBtns[idx]) { e.preventDefault(); answerBtns[idx].click(); }
         }
-        to {
-            transform: translateX(0);
-            opacity: 1;
+        if ((e.key === 'Enter' || e.key === ' ') && nextBtn && nextBtn.style.display !== 'none') {
+            e.preventDefault(); nextBtn.click();
         }
+        if (e.key === 'f' || e.key === 'F') { toggleFlag(); }
     }
-    
-    @keyframes slideOutRight {
-        from {
-            transform: translateX(0);
-            opacity: 1;
-        }
-        to {
-            transform: translateX(100%);
-            opacity: 0;
-        }
-    }
+});
+
+// Notification animation
+const style = document.createElement('style');
+style.textContent = `
+@keyframes slideInRight { from { transform:translateX(100%);opacity:0 } to { transform:translateX(0);opacity:1 } }
 `;
-document.head.appendChild(notificationStyles);
+document.head.appendChild(style);
