@@ -542,16 +542,13 @@ body {
     box-shadow: var(--shadow-sm);
     padding: 1rem;
     margin-left: 1.25rem;
+    margin-bottom: 2.65rem;
     position: sticky;
     top: calc(var(--topbar-h) + 1rem);
-    max-height: calc(100vh - var(--topbar-h) - 1rem);
-    overflow-y: auto;
-    padding-bottom: 3rem;
-    scrollbar-width: none;
 }
 
 .nav-grid-panel::-webkit-scrollbar {
-    display: none;
+    width: 0;
 }
 
 .nav-grid-header {
