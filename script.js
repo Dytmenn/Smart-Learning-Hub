@@ -158,6 +158,7 @@ function startQuizWithOptions() {
     flaggedQuestions = new Set();
 
     showPage('quiz-page');
+    window.scrollTo(0, 0);
     document.getElementById("kuis-title").innerText = currentMateri;
     document.getElementById("statusbar-subject").innerText = currentMateri;
     resetQuizState();
