@@ -12,6 +12,10 @@ let userAnswers = {};
 let flaggedQuestions = new Set();
 let showAnswersImmediately = false;
 let isMobile = window.innerWidth <= 768;
+let timerMode = 'unlimited'; // 'unlimited' atau 'limited'
+let timerDuration = 15; // durasi dalam menit
+let timeRemaining = 0; // untuk timer dengan batas waktu
+let quizFinished = false; // flag untuk mencegah endQuiz dipanggil dua kali
 
 // Theme management
 const themeToggle = document.getElementById('theme-toggle');
@@ -126,6 +130,7 @@ function resetAllState() {
     flaggedQuestions = new Set();
     clearInterval(timerInterval);
     startTime = 0;
+    quizFinished = false;
 }
 
 function resetQuizState() {
@@ -135,6 +140,7 @@ function resetQuizState() {
     wrongAnswers = 0;
     clearInterval(timerInterval);
     startTime = 0;
+    quizFinished = false;
 }
 
 // Start quiz modal
@@ -148,9 +154,41 @@ function mulaiKuis() {
     document.getElementById('quiz-options-modal').style.display = 'flex';
 }
 
+function toggleTimerDuration() {
+    const timerModeRadios = document.querySelectorAll('input[name="timer-mode"]');
+    const selectedMode = Array.from(timerModeRadios).find(r => r.checked)?.value || 'unlimited';
+    const durationSection = document.getElementById('timer-duration-section');
+    
+    if (selectedMode === 'limited' && durationSection) {
+        durationSection.style.display = 'block';
+    } else if (durationSection) {
+        durationSection.style.display = 'none';
+    }
+}
+
+// Update timer duration display value when slider changes
+function updateTimerDurationDisplay() {
+    const timerSlider = document.getElementById('timer-duration');
+    const timerValue = document.getElementById('timer-duration-value');
+    if (timerSlider && timerValue) {
+        timerValue.textContent = timerSlider.value;
+    }
+}
+
 function startQuizWithOptions() {
     const selected = document.querySelector('input[name="answer-display"]:checked').value;
     showAnswersImmediately = selected === 'immediate';
+    
+    // Get timer mode and duration
+    const timerModeRadios = document.querySelectorAll('input[name="timer-mode"]');
+    timerMode = Array.from(timerModeRadios).find(r => r.checked)?.value || 'unlimited';
+    
+    if (timerMode === 'limited') {
+        const durationInput = document.getElementById('timer-duration');
+        timerDuration = parseInt(durationInput.value) || 15;
+        timeRemaining = timerDuration * 60; // convert to seconds
+    }
+    
     document.getElementById('quiz-options-modal').style.display = 'none';
 
     currentQuestions = shuffleArray(originalQuestions.map(q => shuffleAnswers(q)));
@@ -162,9 +200,14 @@ function startQuizWithOptions() {
     document.getElementById("statusbar-subject").innerText = currentMateri;
     resetQuizState();
     buildNavGrid();
+    
+    // Reset timer color
+    const timerEl = document.getElementById('timer');
+    if (timerEl) timerEl.style.color = '#3b82f6';
+    
     startTimer();
     showQuestion();
-
+    
     setTimeout(() => {
         window.scrollTo(0, 0);
     }, 1);
@@ -172,14 +215,66 @@ function startQuizWithOptions() {
 
 // Timer
 function startTimer() {
-    startTime = Date.now();
-    timerInterval = setInterval(() => {
-        const elapsed = Math.floor((Date.now() - startTime) / 1000);
-        const m = Math.floor(elapsed / 60);
-        const s = elapsed % 60;
-        const timerEl = document.getElementById('timer');
-        if (timerEl) timerEl.textContent = `${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
-    }, 1000);
+    if (timerMode === 'unlimited') {
+        // Timer normal - berjalan dari 0
+        startTime = Date.now();
+        timerInterval = setInterval(() => {
+            const elapsed = Math.floor((Date.now() - startTime) / 1000);
+            const m = Math.floor(elapsed / 60);
+            const s = elapsed % 60;
+            const timerEl = document.getElementById('timer');
+            if (timerEl) timerEl.textContent = `${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+        }, 1000);
+    } else {
+        // Timer dengan batas waktu - countdown
+        startTime = Date.now();
+        let warned1Min = false;
+        
+        timerInterval = setInterval(() => {
+            const elapsed = Math.floor((Date.now() - startTime) / 1000);
+            const remaining = timeRemaining - elapsed;
+            
+            if (remaining <= 0 && !quizFinished) {
+                clearInterval(timerInterval);
+                const timerEl = document.getElementById('timer');
+                if (timerEl) {
+                    timerEl.textContent = '00:00';
+                    timerEl.classList.remove('timer-pulse'); // Hapus animasi detak
+                }
+                if (!showAnswersImmediately) showAllAnswers();
+                endQuiz();
+                return;
+            }
+            
+            // Tampilkan notifikasi ketika tinggal 1 menit (60 detik)
+            if (remaining === 60 && !warned1Min) {
+                warned1Min = true;
+                showNotification('Peringatan: Waktu tinggal 1 menit!', 'warning');
+            }
+            
+            const m = Math.floor(remaining / 60);
+            const s = remaining % 60;
+            const timerEl = document.getElementById('timer');
+            if (timerEl) {
+                timerEl.textContent = `${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+                
+                // Ubah warna timer jika waktu tinggal sedikit
+                if (remaining <= 10) {
+                    timerEl.style.color = '#ef4444'; // merah
+                    timerEl.classList.add('timer-pulse'); // Tambah animasi detak jantung
+                } else if (remaining <= 60) {
+                    timerEl.style.color = '#ef4444'; // merah
+                    timerEl.classList.remove('timer-pulse'); // Hapus animasi
+                } else if (remaining <= 300) {
+                    timerEl.style.color = '#f59e0b'; // orange
+                    timerEl.classList.remove('timer-pulse'); // Hapus animasi
+                } else {
+                    timerEl.style.color = '#3b82f6'; // biru
+                    timerEl.classList.remove('timer-pulse'); // Hapus animasi
+                }
+            }
+        }, 100);
+    }
 }
 
 function stopTimer() { clearInterval(timerInterval); }
@@ -378,6 +473,19 @@ document.addEventListener('DOMContentLoaded', () => {
     initTheme();
     showPage('menu-page');
 
+    // Setup timer mode toggle
+    const timerModeRadios = document.querySelectorAll('input[name="timer-mode"]');
+    timerModeRadios.forEach(radio => {
+        radio.addEventListener('change', toggleTimerDuration);
+    });
+    toggleTimerDuration(); // Initialize on load
+
+    // Setup timer duration slider
+    const timerSlider = document.getElementById('timer-duration');
+    if (timerSlider) {
+        timerSlider.addEventListener('input', updateTimerDurationDisplay);
+    }
+
     const nextBtn = document.getElementById("next-btn");
     if (nextBtn) {
         nextBtn.addEventListener("click", () => {
@@ -443,10 +551,14 @@ function confirmFinishQuiz() {
 }
 
 function finishQuiz() {
+    if (quizFinished) return; // Prevent action if quiz already finished
     openFinishQuizModal();
 }
 
 function endQuiz() {
+    if (quizFinished) return; // Prevent duplicate calls
+    quizFinished = true;
+    
     stopTimer();
     const totalTime = Math.floor((Date.now() - startTime) / 1000);
     const m = Math.floor(totalTime / 60);
