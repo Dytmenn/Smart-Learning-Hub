@@ -547,6 +547,11 @@ body {
     max-height: calc(100vh - var(--topbar-h) - 1rem);
     overflow-y: auto;
     padding-bottom: 3rem;
+    scrollbar-width: none;
+}
+
+.nav-grid-panel::-webkit-scrollbar {
+    display: none;
 }
 
 .nav-grid-header {
