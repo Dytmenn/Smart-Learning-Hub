@@ -1,626 +1,750 @@
 const materi = {
-  judul: "Pendidikan Pancasila Kelas XI: Kisi-Kisi Ujian Akhir Sekolah 2025/2026",
-  deskripsi: `Materi ini mencakup seluruh topik Pendidikan Pancasila Kelas XI SMK sesuai Kurikulum Merdeka.
+  judul: "Perkembangan Peserta Didik (PPD): Kisi-Kisi BAB I – BAB VIII",
+  deskripsi: `Materi ini mencakup BAB I sampai BAB VIII buku Perkembangan Peserta Didik.
 
-    **SEJARAH KONSTITUSI INDONESIA**:
-    UUD 1945 pertama kali disahkan pada 18 Agustus 1945 oleh PPKI. Namun UUD 1945 belum dapat dilaksanakan secara penuh karena kondisi negara yang belum stabil pasca kemerdekaan dan masih menghadapi ancaman dari penjajah.
+    **BAB I – PENDAHULUAN**:
+    Peserta didik adalah individu yang sedang mengembangkan potensi dirinya melalui pendidikan. Setiap peserta didik unik (kecerdasan, bakat, minat, kepribadian, latar belakang berbeda).
+    Aspek perkembangan yang dikaji: fisik-psikomotorik, kognitif, bahasa, sosial, emosi, moral-spiritual.
+    Manfaat mempelajari PPD (Desmita, 2013): (1) realistis dalam memberi harapan pada peserta didik, (2) mampu merespon peserta didik secara tepat, (3) dapat mengenali perkembangan peserta didik, (4) mempersiapkan anak menghadapi perubahan perkembangan secara tepat. PPD merupakan bagian kompetensi pedagogik calon guru.
 
-    **Konstitusi yang Pernah Berlaku di Indonesia**:
-    1. UUD 1945 (18 Agustus 1945 – 27 Desember 1949)
-    2. Konstitusi RIS (27 Desember 1949 – 17 Agustus 1950) — bentuk negara federal
-    3. UUDS 1950 (17 Agustus 1950 – 5 Juli 1959) — sistem parlementer liberal
-    4. UUD 1945 kembali berlaku (Dekrit Presiden 5 Juli 1959 – sekarang)
+    **BAB II – HAKIKAT PERKEMBANGAN**:
+    Perkembangan: pola perubahan yang dimulai sejak konsepsi dan berlanjut sepanjang siklus hidup. Dapat bersifat kualitatif (tidak dapat diukur) dan kuantitatif (dapat diukur). Merupakan hasil proses biologis, kognitif, dan sosio-emosional.
+    Pertumbuhan: perubahan jumlah/ukuran yang dapat diukur (berat, panjang, umur tulang); dapat terhenti saat matang, sedangkan perkembangan berlangsung sampai akhir hayat.
+    Kematangan: kemajuan intrinsik dan kualitatif dalam perkembangan biologis (muncul dari dalam diri, bukan hasil belajar).
+    Jangka hidup (Santrock): pranatal (konsepsi–lahir, ±9 bulan), bayi (lahir–18/24 bulan), anak awal (–5/6 tahun), anak tengah dan akhir (6–11 tahun), remaja (10–13 s.d. 18–22 tahun), dewasa awal, dewasa tengah, dewasa akhir.
+    Isu perkembangan: (1) bawaan vs lingkungan (kematangan vs pengalaman), (2) kontinuitas vs diskontinuitas, (3) pengalaman dini vs pengalaman selanjutnya.
+    Faktor yang memengaruhi: bawaan, lingkungan, keluarga, dan masa kritis.
 
-    **UUDS 1950**: Undang-Undang Dasar Sementara 1950 berlaku saat Indonesia menganut sistem demokrasi liberal/parlementer. Bersifat sementara karena menunggu konstituante membuat UUD tetap. Masa ini ditandai dengan sering berganti kabinet.
+    **BAB III – PRINSIP PERKEMBANGAN**:
+    Prinsip perkembangan = asas umum yang mendasari perubahan fisik dan/atau psikologis manusia (setara dengan "hukum perkembangan").
+    11 prinsip: (1) berkelanjutan, (2) fisik dan psikis satu kesatuan integral, (3) dari dan ke arah tertentu, (4) bergantung pada kematangan dan hasil belajar, (5) dari umum ke spesifik, (6) pola sama dan teratur, (7) tempo dan irama berbeda tiap individu, (8) multidimensional dan multidireksional, (9) ada perolehan dan kehilangan, (10) bersifat lentur, (11) bersifat kontekstual.
 
-    **AMANDEMEN UUD 1945**:
-    Dilakukan 4 kali (1999–2002). Alasan: UUD 1945 terlalu singkat, pasal-pasal multitafsir, tidak ada pembatasan kekuasaan presiden, dan perlu menyesuaikan dengan perkembangan demokrasi.
+    **BAB IV – TUGAS PERKEMBANGAN**:
+    Tugas perkembangan (Havighurst): tugas yang harus diselesaikan individu pada fase tertentu; berhasil → bahagia, gagal → kecewa dan kesulitan di tahap berikutnya. Hurlock: tugas perkembangan = ekspektasi sosial.
+    Sumber tugas perkembangan: (a) kematangan fisik, (b) tuntutan masyarakat/kultural, (c) tuntutan dan cita-cita individu, (d) norma agama.
+    Periodisasi: bayi (0–2 th: belajar berjalan, makan makanan padat, berbicara, mengendalikan BAB/BAK); kanak-kanak (2–6 th, masa prasekolah: toilet training, membedakan baik-buruk, bergaul dengan teman sebaya); anak (6–12 th, masa sekolah/intelektual); remaja (12–21 th: hubungan matang dengan teman sebaya, peran sosial, menerima kondisi fisik, kebebasan emosional dari orang tua, memperoleh nilai dan sistem etika); dewasa awal (18–40 th: pekerjaan, memilih pasangan, membentuk keluarga), dewasa madya (40–60 th), dewasa akhir (60 th–kematian: menyesuaikan diri dengan penurunan fisik, pensiun, kehilangan pasangan).
 
-    **NILAI-NILAI PANCASILA**:
-    Sila 1 — Ketuhanan Yang Maha Esa: beriman, bertakwa, toleransi antar umat beragama.
-    Sila 2 — Kemanusiaan yang Adil dan Beradab: mengakui persamaan derajat, menjunjung HAM, sikap tenggang rasa, tidak semena-mena terhadap orang lain.
-    Sila 3 — Persatuan Indonesia: mengutamakan kepentingan bangsa, cinta tanah air, memupuk persatuan dan kesatuan, rela berkorban.
-    Sila 4 — Kerakyatan yang Dipimpin oleh Hikmat Kebijaksanaan dalam Permusyawaratan/Perwakilan: musyawarah mufakat, menghormati keputusan bersama, tidak memaksakan kehendak.
-    Sila 5 — Keadilan Sosial bagi Seluruh Rakyat Indonesia: adil terhadap sesama, tidak boros, tidak bergaya hidup mewah, suka memberi pertolongan, menghormati hak orang lain.
+    **BAB V – TEORI PERKEMBANGAN**:
+    Psikoanalitik – Freud (psikoseksual; id, ego, superego): oral (0–24 bln), anal (2–3 th), falik (3–6 th; oedipus & electra complex), latensi (6–11 th), genital (>11 th). Mekanisme pertahanan diri, contoh proyeksi.
+    Psikososial – Erikson (8 tahap): trust vs mistrust, autonomy vs shame-doubt, initiative vs guilt, industry vs inferiority, identity vs identity diffusion, intimacy vs isolation, generativity vs stagnation, integrity vs despair.
+    Behavioristik: Pavlov (pengkondisian klasik, anjing, stimulus-respon refleks: US, UR, CS, CR); Skinner (pengkondisian operan, merpati, kotak Skinner, penguatan/reinforcement dan hukuman).
+    Kognitif – Piaget: skema, asimilasi, akomodasi, ekuilibrium; tahap sensorimotor (0–2), praoperasional (2–7), operasional konkret (7–11), operasional formal (11–dewasa).
+    Kognitif – Vygotsky: Zone of Proximal Development (ZPD), scaffolding, bahasa dan pikiran; dipengaruhi bantuan orang lain/lingkungan sosial.
 
-    **HUBUNGAN ANTAR SILA**:
-    Pancasila merupakan satu kesatuan yang utuh dan bulat. Sila pertama menjiwai sila-sila berikutnya. Setiap sila saling berhubungan dan tidak dapat dipisahkan satu sama lain.
+    **BAB VI – FISIK-PSIKOMOTORIK**:
+    Perkembangan fisik-psikomotorik: kematangan dan pengendalian gerak tubuh melalui koordinasi otot dan saraf pusat. Keterampilan motorik: motorik halus dan motorik kasar.
+    Faktor yang memengaruhi: keturunan (gen) dan lingkungan (iklim, kesehatan, gizi, dll).
+    Tahap bayi (Hurlock): berat bayi dua kali lipat di usia 4 bulan; duduk tanpa bantuan ±7 bulan; merangkak 8–10 bulan; berjalan tanpa bantuan ±14 bulan.
+    Problematika: remaja memandang diri dari segi fisik (emosi tidak stabil, canggung, pencarian identitas); anorexia nervosa (membuat diri tetap lapar), bulimia nervosa (memuntahkan makanan), busung lapar (kurang gizi).
 
-    **HUKUM**:
-    Unsur-unsur hukum: peraturan mengenai tingkah laku, dibuat oleh badan resmi, bersifat memaksa, dan ada sanksi tegas bagi pelanggarnya.
-    Tujuan hukum: menciptakan ketertiban, keadilan, kepastian hukum, dan kemanfaatan.
+    **BAB VII – PERKEMBANGAN KOGNITIF**:
+    Piaget: anak beradaptasi dan menginterpretasi lingkungan. Sensorimotor (0–2 th; object permanence), praoperasional (2–7 th; egosentris, animisme), operasional konkret (7–11 th; konservasi, egosentris berkurang, berpikir logis terhadap hal konkret), operasional formal (11–dewasa; abstrak, hipotetis-deduktif).
+    Vygotsky: ZPD, scaffolding, bahasa dan pikiran (private speech usia 3–5 th, inner speech).
+    Problematika kognitif: keterlambatan berbicara, gangguan berpikir, gangguan kebiasaan, gangguan psikologis, gangguan tidur, gangguan kecemasan.
 
-    **PENEGAKAN HUKUM**:
-    Peran masyarakat: melaporkan pelanggaran, tidak main hakim sendiri, mendukung aparat hukum, mematuhi peraturan.
-    Pencegahan pelanggaran: pendidikan karakter, sosialisasi hukum, keteladanan, dan penguatan nilai Pancasila.
-
-    **IDEOLOGI**:
-    Pengertian: seperangkat nilai, gagasan, dan keyakinan yang menjadi pedoman dalam kehidupan bermasyarakat, berbangsa, dan bernegara.
-
-    **Ideologi Terbuka**: ideologi yang nilai-nilainya tidak dipaksakan dari luar, bersumber dari nilai-nilai hidup masyarakat itu sendiri, bersifat dinamis dan dapat menyesuaikan diri dengan perkembangan zaman. Ciri: nilai tidak dari luar, digali dari masyarakat, bersifat demokratis, dapat berkembang.
-
-    **Ideologi Tertutup**: ideologi yang bersifat dogmatis dan otoriter, nilai-nilainya dipaksakan kepada masyarakat, tidak memberi kebebasan berpikir. Contoh: komunisme, fasisme.
-
-    **Pancasila sebagai Ideologi Negara**: Pancasila merupakan ideologi terbuka karena nilai-nilainya digali dari budaya dan kehidupan bangsa Indonesia sendiri, bersifat demokratis, dan mampu berkembang sesuai zaman.
-    Fungsi Pancasila sebagai ideologi: pedoman hidup berbangsa, pemersatu bangsa, penyaring budaya asing, dasar negara.
-
-    **DEMOKRASI**:
-    Syarat demokrasi: adanya kebebasan berpendapat, pers yang bebas, pemilu yang jujur dan adil, kekuasaan mayoritas, jaminan HAM, pemerintahan yang transparan.
-    Nilai demokrasi: musyawarah, toleransi, menghormati perbedaan pendapat, menerima kekalahan dengan lapang dada.
-    Perilaku tidak demokratis: memaksakan kehendak, mengancam, tidak mau menerima pendapat orang lain, golput karena tidak peduli.
-    Manfaat demokrasi: mencegah tirani, melindungi kepentingan rakyat, menghasilkan keputusan yang lebih baik.
-
-    **BHINNEKA TUNGGAL IKA**:
-    Semboyan negara Indonesia yang berarti "Berbeda-beda tetapi tetap satu".
-    Berasal dari kitab Sutasoma karya Mpu Tantular pada masa Kerajaan Majapahit.
-    Sikap kebhinekaan: menghargai perbedaan, tidak diskriminasi, gotong royong lintas suku dan agama.
-
-    **TANTANGAN PANCASILA & DISRUPSI INFORMASI**:
-    Ancaman ideologi: radikalisme, komunisme, liberalisme ekstrem, hoaks yang merusak persatuan.
-    Disrupsi informasi: penyebaran informasi yang salah (hoaks, disinformasi) melalui media sosial yang dapat merusak nilai-nilai Pancasila.
-    Dampak negatif disrupsi: perpecahan, ujaran kebencian, hilangnya kepercayaan pada pemerintah.
-    Sikap bijak: literasi digital, verifikasi informasi sebelum disebarkan, berpikir kritis.
-
-    **PERDAMAIAN**:
-    Pentingnya perdamaian: menciptakan stabilitas, kemajuan pembangunan, kerukunan antar umat.
-    Indonesia aktif dalam menjaga perdamaian dunia melalui PBB dan diplomasi.
-
-    **BUDAYA ASING**:
-    Filter budaya asing: nilai-nilai Pancasila, agama, dan norma budaya lokal.
-
-    **KONFLIK SOSIAL**:
-    Konflik yang dipicu oleh perbedaan suku, agama, ras, dan golongan (SARA).
-    Solusi: dialog, mediasi, penegakan hukum yang adil, dan penguatan rasa persatuan.
-
-    **ANCAMAN NEGARA**:
-    Ancaman adalah setiap upaya yang membahayakan kedaulatan negara, keutuhan wilayah, dan keselamatan bangsa. Dapat berupa ancaman militer dan non-militer (ideologi, ekonomi, sosial budaya, siber).
-
-    **TUJUAN NEGARA INDONESIA** (Pembukaan UUD 1945 alinea ke-4):
-    1. Melindungi segenap bangsa Indonesia dan seluruh tumpah darah Indonesia.
-    2. Memajukan kesejahteraan umum.
-    3. Mencerdaskan kehidupan bangsa.
-    4. Ikut melaksanakan ketertiban dunia yang berdasarkan kemerdekaan, perdamaian abadi, dan keadilan sosial.
-
-    **SISTEM PEMERINTAHAN**:
-    Faktor kemajuan negara: pemerintahan yang bersih dan transparan, penegakan hukum, pendidikan berkualitas, dan partisipasi masyarakat.
-    Masa parlementer: 1950–1959 saat berlakunya UUDS 1950, kabinet bertanggung jawab kepada parlemen.
-
-    **KORUPSI & PANCASILA**:
-    Korupsi merupakan pelanggaran nilai-nilai Pancasila terutama Sila ke-2 (melanggar keadilan) dan Sila ke-5 (merugikan rakyat). Korupsi merusak kepercayaan publik, menghambat pembangunan, dan menciptakan ketidakadilan.
+    **BAB VIII – PERKEMBANGAN BAHASA**:
+    Bahasa: bentuk komunikasi verbal dan nonverbal untuk menyampaikan dan menangkap pesan. Lima sistem organisasi bahasa: fonologi (sistem bunyi/fonem), morfologi (morfem), sintaksis (susunan kata menjadi kalimat), semantik (makna), pragmatik (penggunaan sesuai konteks).
+    Faktor yang memengaruhi: intelegensi, kedisiplinan, urutan dalam keluarga, jumlah saudara, ras, peran seks, faktor biologis, lingkungan, status sosial ekonomi keluarga, bilingual.
+    Tahap perkembangan: menangis → mendekut/cooing (2–4 bln) → celoteh/babbling (±6 bln) → satu kata (kata pertama 10–17 bln; vocabulary spurt ±18 bln) → dua kata (18–24 bln; kata pivot) → kalimat sederhana → kalimat kompleks → bahasa pergaulan (bahasa gaul/sandi).
+    Strategi orang dewasa: motherese, recasting.
+    Problematika: terlambat bicara, gagap, aphasia (kerusakan area Broca: sulit menghasilkan kata; area Wernicke: lancar tetapi tidak dapat dipahami).
+    Implikasi pendidikan: meningkatkan kemampuan membaca, menulis, mendengarkan, dan memberi kesempatan bercakap-cakap.
   `,
 };
 
 const soal = [
-  // ===== SEJARAH UUD 1945 =====
+  // ===== BAB I =====
   {
-    question: "Alasan utama mengapa UUD 1945 belum dapat dilaksanakan secara penuh setelah ditetapkan pada 18 Agustus 1945 adalah ...",
+    question: "Manfaat mempelajari perkembangan peserta didik bagi calon guru, yaitu menguasai kompetensi ...",
     answers: [
-      { text: "Belum adanya presiden yang sah untuk memimpin negara", correct: false },
-      { text: "Kondisi negara yang belum stabil karena masih menghadapi ancaman penjajah dan situasi darurat", correct: true },
-      { text: "Isi UUD 1945 dianggap tidak lengkap oleh para founding fathers", correct: false },
-      { text: "Belum adanya persetujuan dari PBB terhadap kemerdekaan Indonesia", correct: false }
+      { text: "Kepribadian", correct: false },
+      { text: "Pedagogik", correct: true },
+      { text: "Profesional", correct: false },
+      { text: "Sosial", correct: false }
     ],
     difficulty: "mudah"
   },
   {
-    question: "Urutan konstitusi yang pernah berlaku di Indonesia secara kronologis yang benar adalah ...",
+    question: "Seorang guru memahami kapan suatu kemampuan siswa sudah dapat dikuasai sehingga tidak menuntut berlebihan maupun terlalu rendah. Hal ini merupakan manfaat mempelajari PPD, yaitu ...",
     answers: [
-      { text: "UUD 1945 → UUDS 1950 → Konstitusi RIS → UUD 1945", correct: false },
-      { text: "Konstitusi RIS → UUD 1945 → UUDS 1950 → UUD 1945", correct: false },
-      { text: "UUD 1945 → Konstitusi RIS → UUDS 1950 → UUD 1945", correct: true },
-      { text: "UUDS 1950 → UUD 1945 → Konstitusi RIS → UUD 1945", correct: false }
+      { text: "Mampu memberi respon secara tepat", correct: false },
+      { text: "Realistis dalam memberikan harapan terhadap peserta didik", correct: true },
+      { text: "Mengenali perkembangan peserta didik", correct: false },
+      { text: "Mempersiapkan anak menghadapi perubahan perkembangan", correct: false }
     ],
     difficulty: "sedang"
   },
   {
-    question: "Amandemen UUD 1945 dilakukan sebanyak empat kali pada tahun 1999–2002. Salah satu alasan utama dilakukannya amandemen adalah ...",
+    question: "Harapan yang terlalu berlebihan dari guru terhadap peserta didik dapat berakibat ...",
     answers: [
-      { text: "UUD 1945 dianggap terlalu panjang dan membingungkan", correct: false },
-      { text: "Adanya desakan dari negara-negara asing untuk mengubah konstitusi", correct: false },
-      { text: "Pasal-pasal UUD 1945 bersifat multitafsir dan tidak ada pembatasan kekuasaan presiden yang jelas", correct: true },
-      { text: "UUD 1945 tidak mengatur tentang hak asasi manusia sama sekali", correct: false }
-    ],
-    difficulty: "sedang"
-  },
-
-  // ===== UUDS 1950 =====
-  {
-    question: "UUDS 1950 (Undang-Undang Dasar Sementara 1950) bersifat sementara karena ...",
-    answers: [
-      { text: "Hanya berlaku untuk wilayah Jawa dan Madura saja", correct: false },
-      { text: "Menunggu Konstituante membentuk UUD yang tetap dan permanen", correct: true },
-      { text: "Merupakan hasil paksaan dari pemerintah kolonial Belanda", correct: false },
-      { text: "Hanya berlaku selama lima tahun setelah kemerdekaan", correct: false }
-    ],
-    difficulty: "mudah"
-  },
-  {
-    question: "Ciri khas sistem pemerintahan yang berlaku pada masa UUDS 1950 adalah ...",
-    answers: [
-      { text: "Presiden memegang kekuasaan penuh tanpa batas", correct: false },
-      { text: "Negara berbentuk federasi dengan beberapa negara bagian", correct: false },
-      { text: "Sistem parlementer liberal di mana kabinet bertanggung jawab kepada parlemen", correct: true },
-      { text: "Sistem presidensial dengan presiden sebagai kepala pemerintahan", correct: false }
-    ],
-    difficulty: "sedang"
-  },
-
-  // ===== NILAI PANCASILA SILA KE-2 =====
-  {
-    question: "Makna yang terkandung dalam Sila ke-2 Pancasila 'Kemanusiaan yang Adil dan Beradab' adalah ...",
-    answers: [
-      { text: "Mengutamakan kepentingan golongan tertentu dalam masyarakat", correct: false },
-      { text: "Mengakui persamaan derajat, menjunjung HAM, dan bersikap tenggang rasa terhadap sesama", correct: true },
-      { text: "Mewajibkan setiap warga negara untuk mengikuti satu agama tertentu", correct: false },
-      { text: "Mengutamakan kepentingan negara di atas kepentingan individu dalam segala hal", correct: false }
-    ],
-    difficulty: "mudah"
-  },
-  {
-    question: "Perhatikan pernyataan berikut!\n\nSeorang siswa membela temannya yang diperlakukan tidak adil oleh kelompok lain, meskipun berbeda suku dan agama.\n\nSikap siswa tersebut mencerminkan nilai Pancasila sila ke ...",
-    answers: [
-      { text: "Sila ke-1", correct: false },
-      { text: "Sila ke-2", correct: true },
-      { text: "Sila ke-3", correct: false },
-      { text: "Sila ke-5", correct: false }
-    ],
-    difficulty: "sedang"
-  },
-
-  // ===== NILAI PANCASILA SILA KE-3 =====
-  {
-    question: "Contoh sikap yang mencerminkan nilai Sila ke-3 Pancasila 'Persatuan Indonesia' dalam kehidupan sehari-hari adalah ...",
-    answers: [
-      { text: "Mengutamakan kepentingan pribadi di atas kepentingan bangsa", correct: false },
-      { text: "Hanya berteman dengan orang yang sesuku dan seagama", correct: false },
-      { text: "Rela berkorban untuk kepentingan bangsa dan mengutamakan persatuan di atas perbedaan", correct: true },
-      { text: "Menolak budaya daerah lain karena dianggap asing", correct: false }
-    ],
-    difficulty: "mudah"
-  },
-  {
-    question: "Makna persatuan dalam Sila ke-3 Pancasila bukan berarti menyeragamkan semua perbedaan, melainkan ...",
-    answers: [
-      { text: "Menghilangkan semua perbedaan suku, agama, dan budaya", correct: false },
-      { text: "Menyatukan seluruh keberagaman dalam semangat Bhinneka Tunggal Ika demi keutuhan bangsa", correct: true },
-      { text: "Mengutamakan suku mayoritas dalam setiap pengambilan keputusan", correct: false },
-      { text: "Melarang penggunaan bahasa daerah agar semua menggunakan bahasa Indonesia", correct: false }
-    ],
-    difficulty: "sedang"
-  },
-
-  // ===== NILAI PANCASILA SILA KE-5 =====
-  {
-    question: "Makna 'Keadilan Sosial bagi Seluruh Rakyat Indonesia' dalam Sila ke-5 Pancasila adalah ...",
-    answers: [
-      { text: "Pemberian kekayaan negara secara merata dan sama rata kepada seluruh rakyat", correct: false },
-      { text: "Terwujudnya pemerataan kesejahteraan, penghormatan hak orang lain, dan tidak bergaya hidup berlebihan", correct: true },
-      { text: "Hanya golongan tertentu yang berhak mendapatkan keadilan dari negara", correct: false },
-      { text: "Keadilan hanya berlaku dalam ranah hukum dan tidak mencakup bidang ekonomi", correct: false }
-    ],
-    difficulty: "mudah"
-  },
-  {
-    question: "Perilaku berikut yang TIDAK mencerminkan nilai Sila ke-5 Pancasila adalah ...",
-    answers: [
-      { text: "Membantu tetangga yang kekurangan tanpa membeda-bedakan", correct: false },
-      { text: "Bergaya hidup mewah dan boros sementara banyak orang di sekitarnya kekurangan", correct: true },
-      { text: "Menghormati hak-hak orang lain dalam kehidupan bermasyarakat", correct: false },
-      { text: "Berpartisipasi dalam kegiatan gotong royong membersihkan lingkungan", correct: false }
-    ],
-    difficulty: "sedang"
-  },
-
-  // ===== HUKUM =====
-  {
-    question: "Berikut ini yang merupakan unsur-unsur hukum yang tepat adalah ...",
-    answers: [
-      { text: "Peraturan adat, dibuat tokoh masyarakat, bersifat anjuran, dan tidak ada sanksi", correct: false },
-      { text: "Peraturan tingkah laku, dibuat badan resmi, bersifat memaksa, dan ada sanksi tegas", correct: true },
-      { text: "Peraturan moral, dibuat oleh individu, bersifat sukarela, dan sanksinya berupa teguran", correct: false },
-      { text: "Peraturan agama, dibuat oleh pemuka agama, bersifat wajib, dan sanksinya dosa", correct: false }
+      { text: "Peserta didik menjadi lebih mandiri", correct: false },
+      { text: "Peserta didik menjadi lebih tertantang dan berprestasi", correct: false },
+      { text: "Peserta didik tidak mengalami hambatan perkembangan", correct: false },
+      { text: "Peserta didik merasa gagal dan memiliki konsep diri yang rendah", correct: true }
     ],
     difficulty: "sedang"
   },
   {
-    question: "Berikut ini yang BUKAN merupakan tujuan hukum adalah ...",
+    question: "Aspek perkembangan yang dikaji dalam mata kuliah Perkembangan Peserta Didik adalah ...",
     answers: [
-      { text: "Menciptakan ketertiban dalam masyarakat", correct: false },
-      { text: "Memberikan kepastian hukum bagi warga negara", correct: false },
-      { text: "Menguntungkan pihak yang membuat peraturan", correct: true },
-      { text: "Mewujudkan keadilan bagi seluruh warga negara", correct: false }
-    ],
-    difficulty: "sedang"
-  },
-
-  // ===== PENEGAKAN HUKUM =====
-  {
-    question: "Peran aktif masyarakat dalam mendukung penegakan hukum yang tepat adalah ...",
-    answers: [
-      { text: "Menghakimi pelanggar hukum secara langsung tanpa melalui proses peradilan", correct: false },
-      { text: "Melaporkan pelanggaran kepada aparat hukum dan mematuhi peraturan yang berlaku", correct: true },
-      { text: "Membiarkan pelanggaran hukum karena bukan urusan pribadi", correct: false },
-      { text: "Membantu pelanggar hukum agar terhindar dari sanksi", correct: false }
-    ],
-    difficulty: "sedang"
-  },
-  {
-    question: "Upaya PALING EFEKTIF untuk mencegah pelanggaran hukum di lingkungan sekolah adalah ...",
-    answers: [
-      { text: "Memberikan hukuman fisik kepada siswa yang melanggar aturan", correct: false },
-      { text: "Membiarkan siswa menentukan sendiri aturan tanpa pengawasan guru", correct: false },
-      { text: "Pendidikan karakter, sosialisasi tata tertib, dan keteladanan dari guru dan pimpinan sekolah", correct: true },
-      { text: "Memasang kamera pengawas di setiap sudut sekolah tanpa edukasi", correct: false }
-    ],
-    difficulty: "sedang"
-  },
-  {
-    question: "Contoh pelanggaran yang paling sering terjadi di lingkungan sekolah adalah ...",
-    answers: [
-      { text: "Mengikuti upacara bendera dengan tertib", correct: false },
-      { text: "Membolos, tidak mengerjakan tugas, dan melanggar tata tertib sekolah", correct: true },
-      { text: "Aktif berpartisipasi dalam kegiatan ekstrakurikuler", correct: false },
-      { text: "Menghormati guru dan sesama teman di sekolah", correct: false }
+      { text: "Fisik, ekonomi, politik, bahasa, sosial, dan emosi", correct: false },
+      { text: "Fisik-psikomotorik, kognitif, bahasa, sosial, emosi, dan moral-spiritual", correct: true },
+      { text: "Kognitif, kurikulum, bahasa, sosial, emosi, dan moral", correct: false },
+      { text: "Fisik, kognitif, evaluasi, bahasa, sosial, dan spiritual", correct: false }
     ],
     difficulty: "mudah"
   },
 
-  // ===== IDEOLOGI =====
+  // ===== BAB II =====
   {
-    question: "Pengertian ideologi yang paling tepat adalah ...",
+    question: "Perbedaan pokok antara pertumbuhan dan perkembangan adalah ...",
     answers: [
-      { text: "Aturan hukum yang wajib dipatuhi oleh seluruh warga negara", correct: false },
-      { text: "Seperangkat nilai, gagasan, dan keyakinan yang menjadi pedoman hidup bermasyarakat dan bernegara", correct: true },
-      { text: "Kebijakan pemerintah dalam mengatur kehidupan ekonomi negara", correct: false },
-      { text: "Sistem pendidikan yang diterapkan dalam suatu negara", correct: false }
-    ],
-    difficulty: "mudah"
-  },
-  {
-    question: "Ideologi terbuka memiliki ciri khas sebagai berikut, KECUALI ...",
-    answers: [
-      { text: "Nilai-nilainya bersumber dari masyarakat itu sendiri", correct: false },
-      { text: "Bersifat demokratis dan menghargai kebebasan berpikir", correct: false },
-      { text: "Dapat berkembang dan menyesuaikan diri dengan perubahan zaman", correct: false },
-      { text: "Nilai-nilainya dipaksakan dari luar dan bersifat dogmatis", correct: true }
-    ],
-    difficulty: "mudah"
-  },
-  {
-    question: "Perbedaan utama antara ideologi terbuka dan ideologi tertutup adalah ...",
-    answers: [
-      { text: "Ideologi terbuka hanya dianut oleh negara berkembang, ideologi tertutup oleh negara maju", correct: false },
-      { text: "Ideologi terbuka bersifat dinamis dan demokratis, sedangkan ideologi tertutup dogmatis dan otoriter", correct: true },
-      { text: "Ideologi terbuka tidak memiliki dasar hukum, sedangkan ideologi tertutup memiliki dasar hukum yang kuat", correct: false },
-      { text: "Ideologi terbuka hanya berlaku di bidang ekonomi, ideologi tertutup di bidang politik", correct: false }
+      { text: "Pertumbuhan terjadi sepanjang hidup, perkembangan berhenti saat dewasa", correct: false },
+      { text: "Pertumbuhan berkaitan dengan perubahan ukuran yang dapat diukur dan dapat berhenti, perkembangan berlangsung sampai akhir hayat", correct: true },
+      { text: "Pertumbuhan bersifat kualitatif, perkembangan bersifat kuantitatif", correct: false },
+      { text: "Pertumbuhan dan perkembangan tidak memiliki perbedaan", correct: false }
     ],
     difficulty: "sedang"
   },
   {
-    question: "Pancasila disebut sebagai ideologi terbuka karena ...",
+    question: "Perubahan yang berupa 'semakin baik dan semakin lancar' dan tidak dapat diukur secara angka termasuk perubahan ...",
     answers: [
-      { text: "Nilai-nilainya dapat diganti sesuai keinginan pemimpin negara", correct: false },
-      { text: "Nilai-nilainya digali dari budaya dan kehidupan bangsa Indonesia sendiri dan bersifat dinamis", correct: true },
-      { text: "Pancasila menerima semua ideologi asing untuk diterapkan di Indonesia", correct: false },
-      { text: "Tidak ada sanksi bagi yang tidak mengamalkan nilai-nilai Pancasila", correct: false }
+      { text: "Biologis", correct: false },
+      { text: "Kualitatif", correct: true },
+      { text: "Normatif", correct: false },
+      { text: "Kuantitatif", correct: false }
+    ],
+    difficulty: "mudah"
+  },
+  {
+    question: "Pola perkembangan bersifat kompleks sebagai hasil dari tiga proses, yaitu ...",
+    answers: [
+      { text: "Proses biologis, kognitif, dan sosio-emosional", correct: true },
+      { text: "Proses fisik, moral, dan spiritual", correct: false },
+      { text: "Proses belajar, kematangan, dan pengalaman", correct: false },
+      { text: "Proses motorik, bahasa, dan sosial", correct: false }
     ],
     difficulty: "sedang"
   },
   {
-    question: "Fungsi utama Pancasila sebagai ideologi negara adalah ...",
+    question: "Kematangan dikatakan bersifat intrinsik karena ...",
     answers: [
-      { text: "Sebagai sumber penghasilan negara dan dasar perekonomian nasional", correct: false },
-      { text: "Sebagai pedoman hidup berbangsa, pemersatu bangsa, dan penyaring budaya asing", correct: true },
-      { text: "Sebagai dasar untuk membuat perjanjian dengan negara-negara asing", correct: false },
-      { text: "Sebagai pengganti agama dalam kehidupan masyarakat Indonesia", correct: false }
+      { text: "Hanya terjadi saat individu bersekolah", correct: false },
+      { text: "Dihasilkan dari proses latihan yang terus-menerus", correct: false },
+      { text: "Ditentukan sepenuhnya oleh lingkungan keluarga", correct: false },
+      { text: "Berasal dari dalam diri individu, bukan dari faktor luar", correct: true }
     ],
     difficulty: "mudah"
   },
   {
-    question: "Contoh ideologi yang bersifat tertutup adalah ...",
+    question: "Menurut perspektif jangka hidup Santrock, masa anak tengah dan akhir berlangsung pada usia ...",
     answers: [
-      { text: "Pancasila dan demokrasi liberal", correct: false },
-      { text: "Komunisme dan fasisme", correct: true },
-      { text: "Sosialisme demokratis dan liberalisme", correct: false },
-      { text: "Nasionalisme dan Pancasila", correct: false }
+      { text: "2–5 tahun", correct: false },
+      { text: "12–15 tahun", correct: false },
+      { text: "16–20 tahun", correct: false },
+      { text: "6–11 tahun", correct: true }
     ],
     difficulty: "mudah"
   },
-
-  // ===== DEMOKRASI =====
   {
-    question: "Berikut ini yang merupakan SYARAT tegaknya demokrasi dalam suatu negara adalah ...",
+    question: "Pubertas tampak terjadi secara tiba-tiba, padahal sebenarnya berlangsung bertahap selama beberapa tahun. Hal ini mendukung pandangan ...",
     answers: [
-      { text: "Adanya partai politik tunggal yang berkuasa secara mutlak", correct: false },
-      { text: "Kebebasan pers, pemilu yang jujur dan adil, serta jaminan hak asasi manusia", correct: true },
-      { text: "Kekuasaan negara yang tidak terbatas demi menjaga stabilitas", correct: false },
-      { text: "Semua keputusan diambil oleh presiden tanpa perlu persetujuan rakyat", correct: false }
+      { text: "Pengalaman dini sebagai penentu", correct: false },
+      { text: "Diskontinuitas perkembangan", correct: false },
+      { text: "Kontinuitas perkembangan", correct: true },
+      { text: "Faktor lingkungan semata", correct: false }
     ],
     difficulty: "sedang"
   },
   {
-    question: "Manfaat sistem demokrasi bagi suatu negara adalah ...",
+    question: "Psikolog yang berpendapat bahwa anak dan remaja dapat berubah selama perkembangan, seperti aliran sungai yang tidak beku, menganut pandangan ...",
     answers: [
-      { text: "Keputusan hanya diambil oleh segelintir orang yang berkuasa", correct: false },
-      { text: "Mencegah kesewenang-wenangan penguasa dan melindungi kepentingan seluruh rakyat", correct: true },
-      { text: "Memperlambat pengambilan keputusan karena harus melalui musyawarah", correct: false },
-      { text: "Memastikan golongan mayoritas selalu menang dalam setiap keputusan", correct: false }
+      { text: "Pengalaman selanjutnya sebagai penentu perkembangan", correct: true },
+      { text: "Bawaan sebagai satu-satunya faktor", correct: false },
+      { text: "Pengalaman dini sebagai kunci perkembangan", correct: false },
+      { text: "Diskontinuitas mutlak", correct: false }
     ],
     difficulty: "sedang"
   },
   {
-    question: "Perilaku berikut yang TIDAK mencerminkan nilai-nilai demokrasi adalah ...",
+    question: "Faktor-faktor yang memengaruhi perkembangan individu antara lain ...",
     answers: [
-      { text: "Menghormati pendapat orang lain dalam diskusi kelas", correct: false },
-      { text: "Menerima hasil pemungutan suara dengan lapang dada", correct: false },
-      { text: "Memaksakan kehendak kepada orang lain dan tidak mau menerima pendapat berbeda", correct: true },
-      { text: "Berpartisipasi aktif dalam kegiatan pemilihan ketua OSIS", correct: false }
+      { text: "Bawaan, lingkungan, keluarga, dan masa kritis", correct: true },
+      { text: "Bawaan, ekonomi, politik, dan teknologi", correct: false },
+      { text: "Minat, bakat, hobi, dan cita-cita saja", correct: false },
+      { text: "Kurikulum, guru, sarana, dan teman", correct: false }
     ],
-    difficulty: "sedang"
+    difficulty: "mudah"
   },
 
-  // ===== BHINNEKA TUNGGAL IKA =====
+  // ===== BAB III =====
   {
-    question: "Semboyan 'Bhinneka Tunggal Ika' yang berarti 'Berbeda-beda tetapi tetap satu' diambil dari kitab ...",
+    question: "Prinsip perkembangan didefinisikan sebagai ...",
     answers: [
-      { text: "Kitab Negarakertagama karya Mpu Prapanca", correct: false },
-      { text: "Kitab Sutasoma karya Mpu Tantular", correct: true },
-      { text: "Kitab Ramayana karya Mpu Walmiki", correct: false },
-      { text: "Kitab Pararaton karya anonim", correct: false }
+      { text: "Aturan hukum yang wajib dipatuhi dalam dunia pendidikan", correct: false },
+      { text: "Tahapan perkembangan yang harus dilalui setiap anak", correct: false },
+      { text: "Asas umum yang mendasari terjadinya perubahan fisik dan/atau psikologis manusia", correct: true },
+      { text: "Hasil tes yang mengukur tingkat kecerdasan anak", correct: false }
     ],
     difficulty: "mudah"
   },
   {
-    question: "Sasaran utama promosi semangat Bhinneka Tunggal Ika kepada generasi muda adalah ...",
+    question: "Dalam satu kelas terdapat siswa yang lebih tinggi, lebih dewasa, dan lebih terkoordinasi dibanding teman lainnya. Hal ini sesuai dengan prinsip ...",
     answers: [
-      { text: "Mendorong generasi muda untuk meninggalkan budaya daerahnya demi persatuan", correct: false },
-      { text: "Membentuk sikap menghargai perbedaan suku, agama, ras, dan golongan dalam kehidupan berbangsa", correct: true },
-      { text: "Mewajibkan generasi muda mempelajari semua bahasa daerah di Indonesia", correct: false },
-      { text: "Melarang penggunaan atribut kedaerahan agar tidak memperlihatkan perbedaan", correct: false }
-    ],
-    difficulty: "mudah"
-  },
-  {
-    question: "Sikap yang paling tepat dalam menghadapi keberagaman suku, agama, dan budaya di Indonesia adalah ...",
-    answers: [
-      { text: "Menganggap budaya sendiri paling baik dan merendahkan budaya lain", correct: false },
-      { text: "Hanya bergaul dengan orang yang memiliki latar belakang yang sama", correct: false },
-      { text: "Menghargai dan menghormati perbedaan sebagai kekayaan bangsa yang memperkuat persatuan", correct: true },
-      { text: "Menghindari interaksi dengan kelompok yang berbeda untuk mencegah konflik", correct: false }
-    ],
-    difficulty: "sedang"
-  },
-
-  // ===== TANTANGAN PANCASILA & DISRUPSI INFORMASI =====
-  {
-    question: "Ancaman ideologi yang paling berbahaya bagi kelangsungan Pancasila sebagai dasar negara adalah ...",
-    answers: [
-      { text: "Perkembangan teknologi informasi yang pesat", correct: false },
-      { text: "Masuknya budaya asing yang positif melalui globalisasi", correct: false },
-      { text: "Penyebaran paham radikalisme dan ekstremisme yang bertentangan dengan nilai Pancasila", correct: true },
-      { text: "Meningkatnya jumlah wisatawan asing ke Indonesia", correct: false }
+      { text: "Perkembangan dari umum ke spesifik", correct: false },
+      { text: "Perkembangan bersifat kontekstual", correct: false },
+      { text: "Tempo dan irama perkembangan tiap individu berbeda", correct: true },
+      { text: "Perkembangan berlangsung berkelanjutan", correct: false }
     ],
     difficulty: "sedang"
   },
   {
-    question: "Dampak negatif disrupsi informasi (penyebaran hoaks) terhadap kehidupan berbangsa adalah ...",
+    question: "Bayi menggerakkan seluruh tubuhnya sebelum mampu menggerakkan jari-jarinya secara terkontrol. Hal ini sesuai prinsip ...",
     answers: [
-      { text: "Meningkatkan minat masyarakat untuk membaca berita", correct: false },
-      { text: "Mempercepat penyebaran informasi yang bermanfaat bagi masyarakat", correct: false },
-      { text: "Menimbulkan perpecahan, ujaran kebencian, dan hilangnya kepercayaan pada pemerintah", correct: true },
-      { text: "Mendorong masyarakat untuk lebih kritis dalam menerima informasi", correct: false }
+      { text: "Perkembangan multidireksional", correct: false },
+      { text: "Perkembangan bersifat lentur", correct: false },
+      { text: "Perkembangan dimulai dari hal yang umum menuju yang spesifik", correct: true },
+      { text: "Perkembangan bersifat kontekstual", correct: false }
     ],
     difficulty: "sedang"
   },
   {
-    question: "Sikap BIJAK yang harus dimiliki generasi muda dalam menghadapi disrupsi informasi di era digital adalah ...",
+    question: "Prinsip 'terjadi perolehan dan kehilangan dalam proses perkembangan' ditunjukkan oleh contoh ...",
     answers: [
-      { text: "Langsung menyebarkan informasi yang diterima agar semua orang mengetahuinya", correct: false },
-      { text: "Mempercayai semua informasi yang berasal dari media sosial", correct: false },
-      { text: "Melakukan verifikasi dan cek fakta sebelum mempercayai atau menyebarkan informasi", correct: true },
-      { text: "Tidak menggunakan media sosial sama sekali untuk menghindari hoaks", correct: false }
-    ],
-    difficulty: "sedang"
-  },
-  {
-    question: "Analisis tantangan Pancasila di era disrupsi informasi yang paling tepat adalah ...",
-    answers: [
-      { text: "Pancasila tidak relevan lagi di era digital karena nilai-nilainya sudah usang", correct: false },
-      { text: "Hoaks dan berita palsu di media sosial dapat mengancam persatuan dan nilai-nilai Pancasila jika masyarakat tidak kritis", correct: true },
-      { text: "Disrupsi informasi justru memperkuat nilai-nilai Pancasila karena memperluas akses informasi", correct: false },
-      { text: "Tantangan Pancasila di era digital tidak berbeda dengan tantangan di masa lalu", correct: false }
-    ],
-    difficulty: "susah"
-  },
-
-  // ===== PERSATUAN =====
-  {
-    question: "Manfaat persatuan dan kesatuan bagi bangsa Indonesia adalah ...",
-    answers: [
-      { text: "Mempermudah satu kelompok untuk mendominasi kelompok lain", correct: false },
-      { text: "Memperkuat pertahanan negara, mempercepat pembangunan, dan menjaga keutuhan NKRI", correct: true },
-      { text: "Menghilangkan perbedaan antar daerah sehingga semua menjadi seragam", correct: false },
-      { text: "Membatasi kebebasan individu demi kepentingan kelompok tertentu", correct: false }
-    ],
-    difficulty: "mudah"
-  },
-
-  // ===== PERDAMAIAN =====
-  {
-    question: "Alasan pentingnya perdamaian bagi kemajuan suatu bangsa adalah ...",
-    answers: [
-      { text: "Perdamaian hanya penting untuk negara-negara kecil yang tidak memiliki kekuatan militer", correct: false },
-      { text: "Kondisi damai menciptakan stabilitas yang memungkinkan pembangunan dan kemakmuran rakyat", correct: true },
-      { text: "Perdamaian dapat dicapai tanpa perlu adanya kerja sama antar bangsa", correct: false },
-      { text: "Perdamaian tidak berkaitan dengan kemajuan ekonomi suatu negara", correct: false }
-    ],
-    difficulty: "mudah"
-  },
-
-  // ===== BUDAYA ASING =====
-  {
-    question: "Filter yang paling efektif dalam menyikapi masuknya budaya asing ke Indonesia adalah ...",
-    answers: [
-      { text: "Melarang semua budaya asing masuk ke Indonesia secara total", correct: false },
-      { text: "Menerima semua budaya asing tanpa pertimbangan apapun", correct: false },
-      { text: "Menyaring budaya asing menggunakan nilai-nilai Pancasila, agama, dan norma budaya lokal", correct: true },
-      { text: "Membiarkan masyarakat memilih sendiri budaya asing yang ingin diadopsi", correct: false }
-    ],
-    difficulty: "mudah"
-  },
-
-  // ===== KONFLIK SOSIAL =====
-  {
-    question: "Konflik sosial yang paling sering terjadi di masyarakat Indonesia yang majemuk dipicu oleh ...",
-    answers: [
-      { text: "Perbedaan tingkat pendidikan antar warga", correct: false },
-      { text: "Perbedaan suku, agama, ras, dan golongan (SARA) yang tidak dikelola dengan baik", correct: true },
-      { text: "Persaingan ekonomi antar pengusaha besar", correct: false },
-      { text: "Perbedaan pendapat dalam pemilihan presiden saja", correct: false }
-    ],
-    difficulty: "sedang"
-  },
-
-  // ===== ANCAMAN NEGARA =====
-  {
-    question: "Pengertian 'ancaman' dalam konteks ketahanan negara adalah ...",
-    answers: [
-      { text: "Kritik dari masyarakat terhadap kebijakan pemerintah", correct: false },
-      { text: "Setiap upaya yang membahayakan kedaulatan negara, keutuhan wilayah, dan keselamatan bangsa", correct: true },
-      { text: "Persaingan ekonomi yang ketat dengan negara-negara tetangga", correct: false },
-      { text: "Perbedaan pendapat antara pemerintah dan masyarakat sipil", correct: false }
-    ],
-    difficulty: "mudah"
-  },
-  {
-    question: "Ancaman non-militer yang paling berbahaya bagi ketahanan nasional Indonesia saat ini adalah ...",
-    answers: [
-      { text: "Serangan rudal dari negara asing", correct: false },
-      { text: "Penyerangan fisik terhadap wilayah perbatasan", correct: false },
-      { text: "Penyebaran ideologi asing, radikalisme, dan serangan siber yang merusak persatuan", correct: true },
-      { text: "Latihan militer bersama dengan negara sahabat", correct: false }
-    ],
-    difficulty: "sedang"
-  },
-
-  // ===== TUJUAN NEGARA =====
-  {
-    question: "Tujuan negara Indonesia sebagaimana tercantum dalam Pembukaan UUD 1945 alinea ke-4 adalah ...",
-    answers: [
-      { text: "Menjadi negara terkuat di Asia Tenggara dalam bidang militer", correct: false },
-      { text: "Melindungi bangsa, memajukan kesejahteraan umum, mencerdaskan kehidupan bangsa, dan ikut menjaga perdamaian dunia", correct: true },
-      { text: "Menguasai perdagangan internasional demi kemakmuran bangsa", correct: false },
-      { text: "Memperluas wilayah kekuasaan Indonesia di kawasan Asia", correct: false }
-    ],
-    difficulty: "mudah"
-  },
-
-  // ===== SISTEM PEMERINTAHAN =====
-  {
-    question: "Faktor utama yang mendorong kemajuan suatu negara dalam sistem pemerintahan yang baik adalah ...",
-    answers: [
-      { text: "Kekayaan alam yang melimpah tanpa pengelolaan yang baik", correct: false },
-      { text: "Pemerintahan yang bersih, transparan, penegakan hukum, dan partisipasi aktif masyarakat", correct: true },
-      { text: "Kekuatan militer yang besar untuk menekan kelompok oposisi", correct: false },
-      { text: "Pemimpin yang memerintah dengan cara otoriter demi stabilitas negara", correct: false }
-    ],
-    difficulty: "mudah"
-  },
-  {
-    question: "Masa berlakunya sistem parlementer di Indonesia ditandai dengan ...",
-    answers: [
-      { text: "Berlakunya UUD 1945 pertama kali tahun 1945–1949", correct: false },
-      { text: "Berlakunya Konstitusi RIS tahun 1949–1950", correct: false },
-      { text: "Berlakunya UUDS 1950 tahun 1950–1959 dengan kabinet yang sering berganti", correct: true },
-      { text: "Berlakunya UUD 1945 setelah Dekrit Presiden 1959", correct: false }
-    ],
-    difficulty: "mudah"
-  },
-
-  // ===== HUBUNGAN ANTAR SILA =====
-  {
-    question: "Hubungan antara sila-sila dalam Pancasila yang paling tepat adalah ...",
-    answers: [
-      { text: "Setiap sila berdiri sendiri dan tidak ada keterkaitan satu sama lain", correct: false },
-      { text: "Sila yang lebih tinggi nomournya lebih penting dari yang lebih rendah", correct: false },
-      { text: "Pancasila merupakan satu kesatuan yang utuh; sila pertama menjiwai sila-sila berikutnya", correct: true },
-      { text: "Sila ke-5 merupakan sila yang paling utama karena menyangkut kehidupan sehari-hari", correct: false }
-    ],
-    difficulty: "mudah"
-  },
-
-  // ===== NILAI PANCASILA DARI ILUSTRASI =====
-  {
-    question: "Perhatikan ilustrasi berikut!\n\nSeorang dokter muda rela ditempatkan di daerah terpencil untuk melayani masyarakat yang tidak mampu meskipun gajinya jauh lebih kecil dibanding bekerja di kota.\n\nIlustrasi tersebut mencerminkan nilai Pancasila sila ke ...",
-    answers: [
-      { text: "Sila ke-1 dan Sila ke-2", correct: false },
-      { text: "Sila ke-2 dan Sila ke-5", correct: true },
-      { text: "Sila ke-3 dan Sila ke-4", correct: false },
-      { text: "Sila ke-4 dan Sila ke-5", correct: false }
+      { text: "Bertambahnya kosakata anak sekaligus menurunnya kemampuan membedakan bunyi bahasa asing", correct: true },
+      { text: "Anak yang bertambah tinggi setiap tahun", correct: false },
+      { text: "Anak belajar berjalan setelah dapat merangkak", correct: false },
+      { text: "Semua anak mulai berbicara pada usia yang sama", correct: false }
     ],
     difficulty: "susah"
   },
   {
-    question: "Perhatikan ilustrasi berikut!\n\nDalam rapat OSIS, terdapat perbedaan pendapat yang tajam. Ketua OSIS memutuskan untuk melakukan voting, namun sebelumnya memastikan semua pihak mendapatkan kesempatan berbicara dan hasilnya diterima bersama.\n\nIlustrasi tersebut mencerminkan nilai Pancasila sila ke ...",
+    question: "Jumlah prinsip perkembangan yang dibahas dalam BAB III buku PPD adalah ...",
     answers: [
-      { text: "Sila ke-2", correct: false },
-      { text: "Sila ke-3", correct: false },
-      { text: "Sila ke-4", correct: true },
-      { text: "Sila ke-5", correct: false }
+      { text: "13 prinsip", correct: false },
+      { text: "9 prinsip", correct: false },
+      { text: "7 prinsip", correct: false },
+      { text: "11 prinsip", correct: true }
+    ],
+    difficulty: "mudah"
+  },
+
+  // ===== BAB IV =====
+  {
+    question: "Menurut Havighurst, tugas perkembangan adalah ...",
+    answers: [
+      { text: "Tes yang digunakan untuk mengukur kecerdasan anak", correct: false },
+      { text: "Tugas yang harus diselesaikan individu pada fase tertentu; bila berhasil akan bahagia, bila gagal akan kecewa dan mengalami kesulitan selanjutnya", correct: true },
+      { text: "Kewajiban orang tua dalam membesarkan anak", correct: false },
+      { text: "Tugas sekolah yang diberikan guru sesuai kurikulum", correct: false }
+    ],
+    difficulty: "sedang"
+  },
+  {
+    question: "Hurlock menyebut tugas perkembangan sebagai ...",
+    answers: [
+      { text: "Warisan genetik", correct: false },
+      { text: "Ekspektasi sosial", correct: true },
+      { text: "Hasil kematangan saja", correct: false },
+      { text: "Tuntutan kurikulum", correct: false }
+    ],
+    difficulty: "mudah"
+  },
+  {
+    question: "Berikut ini yang BUKAN sumber tugas perkembangan adalah ...",
+    answers: [
+      { text: "Norma agama", correct: false },
+      { text: "Kematangan fisik", correct: false },
+      { text: "Tuntutan masyarakat secara kultural", correct: false },
+      { text: "Persaingan antar sekolah", correct: true }
+    ],
+    difficulty: "sedang"
+  },
+  {
+    question: "Belajar berjalan, makan makanan padat, dan mengendalikan buang air merupakan tugas perkembangan pada masa ...",
+    answers: [
+      { text: "Anak (6–12 tahun)", correct: false },
+      { text: "Remaja (12–21 tahun)", correct: false },
+      { text: "Bayi (0–2 tahun)", correct: true },
+      { text: "Kanak-kanak (2–6 tahun)", correct: false }
+    ],
+    difficulty: "mudah"
+  },
+  {
+    question: "Masa prasekolah yang berlangsung pada usia 2–6 tahun disebut masa ...",
+    answers: [
+      { text: "Kanak-kanak", correct: true },
+      { text: "Anak", correct: false },
+      { text: "Remaja", correct: false },
+      { text: "Bayi", correct: false }
+    ],
+    difficulty: "mudah"
+  },
+  {
+    question: "Mencapai kebebasan emosional dari orang tua dan mulai menjadi 'diri sendiri' merupakan tugas perkembangan masa ...",
+    answers: [
+      { text: "Remaja", correct: true },
+      { text: "Dewasa akhir", correct: false },
+      { text: "Kanak-kanak", correct: false },
+      { text: "Anak", correct: false }
+    ],
+    difficulty: "mudah"
+  },
+  {
+    question: "Mendapatkan pekerjaan, memilih teman hidup, dan membesarkan anak merupakan tugas perkembangan masa ...",
+    answers: [
+      { text: "Remaja", correct: false },
+      { text: "Dewasa madya", correct: false },
+      { text: "Dewasa akhir", correct: false },
+      { text: "Dewasa awal", correct: true }
+    ],
+    difficulty: "sedang"
+  },
+  {
+    question: "Menyesuaikan diri dengan masa pensiun, penghasilan berkurang, dan kematian pasangan merupakan tugas perkembangan masa ...",
+    answers: [
+      { text: "Dewasa madya", correct: false },
+      { text: "Dewasa awal", correct: false },
+      { text: "Remaja akhir", correct: false },
+      { text: "Dewasa akhir", correct: true }
     ],
     difficulty: "sedang"
   },
 
-  // ===== KORUPSI & PANCASILA =====
+  // ===== BAB V =====
   {
-    question: "Korupsi merupakan pelanggaran nilai-nilai Pancasila karena ...",
+    question: "Tahap psikoseksual Freud yang ditandai kesenangan di sekitar mulut (menghisap) terjadi pada tahap ...",
     answers: [
-      { text: "Korupsi hanya melanggar hukum positif, bukan nilai-nilai Pancasila", correct: false },
-      { text: "Korupsi melanggar Sila ke-2 dan ke-5 karena merugikan rakyat dan menciptakan ketidakadilan", correct: true },
-      { text: "Korupsi hanya merugikan pemerintah, bukan rakyat secara langsung", correct: false },
-      { text: "Korupsi hanya terjadi di negara yang tidak memiliki dasar ideologi yang kuat", correct: false }
+      { text: "Anal", correct: false },
+      { text: "Genital", correct: false },
+      { text: "Oral", correct: true },
+      { text: "Falik", correct: false }
+    ],
+    difficulty: "mudah"
+  },
+  {
+    question: "Urutan tahap perkembangan psikoseksual menurut Freud yang benar adalah ...",
+    answers: [
+      { text: "Anal – oral – falik – latensi – genital", correct: false },
+      { text: "Oral – anal – latensi – falik – genital", correct: false },
+      { text: "Oral – anal – falik – latensi – genital", correct: true },
+      { text: "Oral – falik – anal – genital – latensi", correct: false }
+    ],
+    difficulty: "sedang"
+  },
+  {
+    question: "Oedipus complex dan electra complex terjadi pada tahap ...",
+    answers: [
+      { text: "Falik (3–6 tahun)", correct: true },
+      { text: "Anal (2–3 tahun)", correct: false },
+      { text: "Oral (0–24 bulan)", correct: false },
+      { text: "Latensi (6–11 tahun)", correct: false }
+    ],
+    difficulty: "sedang"
+  },
+  {
+    question: "Seseorang yang melimpahkan kesalahannya kepada orang lain untuk menutupi kekurangannya menggunakan mekanisme pertahanan diri berupa ...",
+    answers: [
+      { text: "Sublimasi", correct: false },
+      { text: "Represi", correct: false },
+      { text: "Proyeksi", correct: true },
+      { text: "Regresi", correct: false }
+    ],
+    difficulty: "sedang"
+  },
+  {
+    question: "Teori Erikson berbeda dari Freud karena Erikson lebih menekankan pada ...",
+    answers: [
+      { text: "Struktur kognitif anak", correct: false },
+      { text: "Naluri seksual semata", correct: false },
+      { text: "Hubungan timbal balik antara pribadi individu dan kebudayaan (psikososial)", correct: true },
+      { text: "Pengkondisian stimulus-respon", correct: false }
+    ],
+    difficulty: "sedang"
+  },
+  {
+    question: "Krisis 'identity vs identity diffusion' dalam teori Erikson terjadi pada tahap ...",
+    answers: [
+      { text: "Remaja (12–18 tahun)", correct: true },
+      { text: "Usia sekolah (6–12 tahun)", correct: false },
+      { text: "Dewasa muda (19–40 tahun)", correct: false },
+      { text: "Usia bermain (3–6 tahun)", correct: false }
+    ],
+    difficulty: "sedang"
+  },
+  {
+    question: "Bayi yang tidak mendapat kehangatan dan kenyamanan dari ibunya akan mengembangkan rasa tidak percaya. Hal ini sesuai tahap Erikson ...",
+    answers: [
+      { text: "Autonomy vs shame, doubt", correct: false },
+      { text: "Trust vs mistrust", correct: true },
+      { text: "Initiative vs guilt", correct: false },
+      { text: "Industry vs inferiority", correct: false }
+    ],
+    difficulty: "mudah"
+  },
+  {
+    question: "Percobaan Pavlov dengan anjing, daging, dan bel merupakan contoh ...",
+    answers: [
+      { text: "Perkembangan kognitif", correct: false },
+      { text: "Belajar observasional", correct: false },
+      { text: "Pengkondisian klasik", correct: true },
+      { text: "Pengkondisian operan", correct: false }
+    ],
+    difficulty: "mudah"
+  },
+  {
+    question: "Dalam percobaan Pavlov, daging yang menimbulkan air liur secara refleks disebut ...",
+    answers: [
+      { text: "Conditioned stimulus", correct: false },
+      { text: "Conditioned response", correct: false },
+      { text: "Unconditioned stimulus", correct: true },
+      { text: "Reinforcer", correct: false }
+    ],
+    difficulty: "sedang"
+  },
+  {
+    question: "Tokoh yang meneliti perilaku melalui kotak Skinner dengan objek merpati dan menekankan penguatan (reinforcement) adalah ...",
+    answers: [
+      { text: "B.F. Skinner", correct: true },
+      { text: "Lev Vygotsky", correct: false },
+      { text: "Jean Piaget", correct: false },
+      { text: "Ivan Pavlov", correct: false }
+    ],
+    difficulty: "mudah"
+  },
+  {
+    question: "Dalam teori Piaget, proses menggabungkan informasi baru ke dalam skema yang sudah ada disebut ...",
+    answers: [
+      { text: "Organisasi", correct: false },
+      { text: "Ekuilibrium", correct: false },
+      { text: "Asimilasi", correct: true },
+      { text: "Akomodasi", correct: false }
+    ],
+    difficulty: "sedang"
+  },
+  {
+    question: "Pembentukan skema baru atau perubahan skema lama karena informasi baru tidak sesuai dengan skema yang ada disebut ...",
+    answers: [
+      { text: "Konservasi", correct: false },
+      { text: "Asimilasi", correct: false },
+      { text: "Adaptasi", correct: false },
+      { text: "Akomodasi", correct: true }
+    ],
+    difficulty: "sedang"
+  },
+  {
+    question: "Konsep Vygotsky yang menyatakan tugas yang belum dapat diselesaikan sendiri tetapi dapat dikuasai dengan bantuan orang lain adalah ...",
+    answers: [
+      { text: "Ekuilibrium", correct: false },
+      { text: "Skema", correct: false },
+      { text: "Zone of Proximal Development (ZPD)", correct: true },
+      { text: "Object permanence", correct: false }
+    ],
+    difficulty: "sedang"
+  },
+
+  // ===== BAB VI =====
+  {
+    question: "Perkembangan psikomotorik adalah perkembangan yang mengelola gerakan fisik melalui koordinasi antara ...",
+    answers: [
+      { text: "Hormon dan kelenjar", correct: false },
+      { text: "Otot dan saraf pusat", correct: true },
+      { text: "Mata dan telinga", correct: false },
+      { text: "Tulang dan darah", correct: false }
+    ],
+    difficulty: "mudah"
+  },
+  {
+    question: "Menulis, menggunting, dan meronce merupakan contoh keterampilan ...",
+    answers: [
+      { text: "Motorik kasar", correct: false },
+      { text: "Motorik halus", correct: true },
+      { text: "Kognitif", correct: false },
+      { text: "Sosial", correct: false }
+    ],
+    difficulty: "mudah"
+  },
+  {
+    question: "Faktor umum yang memengaruhi perkembangan fisik-psikomotorik adalah ...",
+    answers: [
+      { text: "Faktor kurikulum dan guru", correct: false },
+      { text: "Faktor keturunan dan lingkungan", correct: true },
+      { text: "Faktor teknologi dan media", correct: false },
+      { text: "Faktor agama dan budaya saja", correct: false }
+    ],
+    difficulty: "mudah"
+  },
+  {
+    question: "Menurut Hurlock, berat badan bayi menjadi dua kali lipat berat lahir pada usia ...",
+    answers: [
+      { text: "8 bulan", correct: false },
+      { text: "4 bulan", correct: true },
+      { text: "12 bulan", correct: false },
+      { text: "2 bulan", correct: false }
+    ],
+    difficulty: "sedang"
+  },
+  {
+    question: "Seorang remaja putri membatasi makan secara ekstrem agar terlihat kurus. Gangguan pola makan ini disebut ...",
+    answers: [
+      { text: "Bulimia nervosa", correct: false },
+      { text: "Anorexia nervosa", correct: true },
+      { text: "Obesitas", correct: false },
+      { text: "Busung lapar", correct: false }
+    ],
+    difficulty: "sedang"
+  },
+  {
+    question: "Gangguan makan yang ditandai usaha terus-menerus memuntahkan kembali makanan yang telah dimakan adalah ...",
+    answers: [
+      { text: "Anorexia nervosa", correct: false },
+      { text: "Busung lapar", correct: false },
+      { text: "Malnutrisi akut", correct: false },
+      { text: "Bulimia nervosa", correct: true }
+    ],
+    difficulty: "sedang"
+  },
+  {
+    question: "Busung lapar pada anak dapat menimbulkan dampak ...",
+    answers: [
+      { text: "Tidak berdampak pada perkembangan anak", correct: false },
+      { text: "Pertumbuhan menjadi lebih cepat dari anak lain", correct: false },
+      { text: "Pertumbuhan fisik dan psikomotorik terhambat serta mudah sakit", correct: true },
+      { text: "Peningkatan kemampuan motorik kasar", correct: false }
+    ],
+    difficulty: "mudah"
+  },
+
+  // ===== BAB VII =====
+  {
+    question: "Menurut Piaget, anak yang mulai memahami bahwa benda tetap ada meskipun tidak terlihat (object permanence) berada pada tahap ...",
+    answers: [
+      { text: "Praoperasional", correct: false },
+      { text: "Operasional formal", correct: false },
+      { text: "Operasional konkret", correct: false },
+      { text: "Sensorimotor", correct: true }
+    ],
+    difficulty: "mudah"
+  },
+  {
+    question: "Anak menganggap boneka dan benda di sekitarnya memiliki jiwa seperti manusia. Ciri ini disebut ...",
+    answers: [
+      { text: "Reversibilitas", correct: false },
+      { text: "Konservasi", correct: false },
+      { text: "Seriasi", correct: false },
+      { text: "Animisme", correct: true }
+    ],
+    difficulty: "sedang"
+  },
+  {
+    question: "Rentang usia tahap operasional konkret menurut Piaget adalah ...",
+    answers: [
+      { text: "11 tahun–dewasa", correct: false },
+      { text: "7–11 tahun", correct: true },
+      { text: "0–2 tahun", correct: false },
+      { text: "2–7 tahun", correct: false }
+    ],
+    difficulty: "mudah"
+  },
+  {
+    question: "Anak mulai mampu mengerjakan tugas konservasi dan egosentrisnya berkurang pada tahap ...",
+    answers: [
+      { text: "Operasional formal", correct: false },
+      { text: "Operasional konkret", correct: true },
+      { text: "Praoperasional", correct: false },
+      { text: "Sensorimotor", correct: false }
+    ],
+    difficulty: "sedang"
+  },
+  {
+    question: "Siswa SMA mampu berpikir abstrak, menyusun hipotesis, dan menarik kesimpulan logis dari pernyataan. Ia berada pada tahap ...",
+    answers: [
+      { text: "Praoperasional", correct: false },
+      { text: "Sensorimotor", correct: false },
+      { text: "Operasional konkret", correct: false },
+      { text: "Operasional formal", correct: true }
+    ],
+    difficulty: "sedang"
+  },
+  {
+    question: "Teknik pemberian bantuan oleh orang yang lebih mampu pada awal pembelajaran dan dikurangi seiring kemandirian anak disebut ...",
+    answers: [
+      { text: "Scaffolding", correct: true },
+      { text: "Modeling klasik", correct: false },
+      { text: "Asimilasi", correct: false },
+      { text: "Reinforcement", correct: false }
+    ],
+    difficulty: "sedang"
+  },
+  {
+    question: "Anak usia 3–5 tahun yang bergumam sendiri saat bermain atau menyelesaikan tugas, menurut Vygotsky disebut ...",
+    answers: [
+      { text: "Egocentric thought", correct: false },
+      { text: "Babbling", correct: false },
+      { text: "Inner speech", correct: false },
+      { text: "Private speech", correct: true }
+    ],
+    difficulty: "sedang"
+  },
+  {
+    question: "Berikut ini yang termasuk problematika perkembangan kognitif adalah ...",
+    answers: [
+      { text: "Oedipus complex dan electra complex", correct: false },
+      { text: "Gagap, aphasia, dan busung lapar", correct: false },
+      { text: "Keterlambatan berbicara, gangguan berpikir, dan gangguan kecemasan", correct: true },
+      { text: "Anorexia nervosa dan bulimia nervosa", correct: false }
+    ],
+    difficulty: "susah"
+  },
+  {
+    question: "Perbedaan pandangan Piaget dan Vygotsky tentang perkembangan kognitif yang paling tepat adalah ...",
+    answers: [
+      { text: "Keduanya menganggap perkembangan kognitif tidak melalui tahapan", correct: false },
+      { text: "Keduanya menolak peran lingkungan dalam perkembangan kognitif", correct: false },
+      { text: "Piaget menekankan bantuan lingkungan sosial, Vygotsky menekankan adaptasi individu secara mandiri", correct: false },
+      { text: "Piaget menekankan adaptasi anak terhadap lingkungan, Vygotsky menekankan peran lingkungan dan bantuan orang lain dalam belajar", correct: true }
     ],
     difficulty: "susah"
   },
 
-  // ===== SOAL HOTS/ANALISIS =====
+  // ===== BAB VIII =====
   {
-    question: "Seorang warga mengetahui bahwa pejabat di lingkungannya melakukan penyimpangan anggaran dana desa. Tindakan yang paling sesuai dengan nilai Pancasila dan prinsip penegakan hukum adalah ...",
+    question: "Studi mengenai sistem bunyi bahasa dan fonem termasuk sistem bahasa ...",
     answers: [
-      { text: "Diam saja karena takut terlibat masalah hukum", correct: false },
-      { text: "Menyebarkan informasi tersebut di media sosial tanpa verifikasi", correct: false },
-      { text: "Melaporkan secara resmi kepada aparat hukum yang berwenang dengan bukti yang cukup", correct: true },
-      { text: "Mengumpulkan massa untuk mengepung kantor pejabat tersebut", correct: false }
+      { text: "Sintaksis", correct: false },
+      { text: "Fonologi", correct: true },
+      { text: "Semantik", correct: false },
+      { text: "Morfologi", correct: false }
+    ],
+    difficulty: "mudah"
+  },
+  {
+    question: "Penggunaan bahasa yang berbeda ketika berbicara kepada guru dan kepada teman sebaya merupakan contoh sistem bahasa ...",
+    answers: [
+      { text: "Fonologi", correct: false },
+      { text: "Pragmatik", correct: true },
+      { text: "Morfologi", correct: false },
+      { text: "Semantik", correct: false }
+    ],
+    difficulty: "sedang"
+  },
+  {
+    question: "Kajian tentang cara kata-kata dikombinasikan menjadi kalimat, misalnya 'Budi membantu Ibu', termasuk ...",
+    answers: [
+      { text: "Fonologi", correct: false },
+      { text: "Pragmatik", correct: false },
+      { text: "Sintaksis", correct: true },
+      { text: "Morfologi", correct: false }
+    ],
+    difficulty: "sedang"
+  },
+  {
+    question: "Bayi mulai mendekut (cooing) pertama kali pada usia ...",
+    answers: [
+      { text: "9–10 bulan", correct: false },
+      { text: "12–18 bulan", correct: false },
+      { text: "0–1 bulan", correct: false },
+      { text: "2–4 bulan", correct: true }
+    ],
+    difficulty: "sedang"
+  },
+  {
+    question: "Urutan tahap perkembangan bahasa awal yang benar adalah ...",
+    answers: [
+      { text: "Menangis – celoteh – mendekut – satu kata – dua kata", correct: false },
+      { text: "Mendekut – menangis – celoteh – satu kata", correct: false },
+      { text: "Celoteh – menangis – mendekut – dua kata – satu kata", correct: false },
+      { text: "Menangis – mendekut – celoteh – satu kata – dua kata", correct: true }
+    ],
+    difficulty: "sedang"
+  },
+  {
+    question: "Anak berkata 'minum' yang maksudnya 'Aku mau minum'. Tahap perkembangan bahasa ini disebut ...",
+    answers: [
+      { text: "Kalimat kompleks", correct: false },
+      { text: "Dua kata", correct: false },
+      { text: "Satu kata", correct: true },
+      { text: "Celoteh", correct: false }
+    ],
+    difficulty: "mudah"
+  },
+  {
+    question: "Peningkatan kosakata yang pesat sejak usia sekitar 18 bulan disebut ...",
+    answers: [
+      { text: "Babbling", correct: false },
+      { text: "Motherese", correct: false },
+      { text: "Recasting", correct: false },
+      { text: "Vocabulary spurt", correct: true }
+    ],
+    difficulty: "sedang"
+  },
+  {
+    question: "Cara orang dewasa berbicara kepada bayi dengan kalimat sederhana dan frekuensi yang lebih luas disebut ...",
+    answers: [
+      { text: "Pivot", correct: false },
+      { text: "Motherese", correct: true },
+      { text: "Recasting", correct: false },
+      { text: "Aphasia", correct: false }
+    ],
+    difficulty: "mudah"
+  },
+  {
+    question: "Berikut ini yang BUKAN faktor yang memengaruhi perkembangan bahasa adalah ...",
+    answers: [
+      { text: "Intelegensi", correct: false },
+      { text: "Warna kulit tanpa kaitan lingkungan dan biologis", correct: true },
+      { text: "Status sosial ekonomi keluarga", correct: false },
+      { text: "Urutan kelahiran dalam keluarga", correct: false }
     ],
     difficulty: "susah"
   },
   {
-    question: "Analisis yang paling tepat mengenai alasan Pancasila harus tetap menjadi ideologi negara Indonesia adalah ...",
+    question: "Anak usia dua tahun yang jumlah kosakatanya rendah dan kurang distimulasi lingkungannya, kemungkinan mengalami ...",
     answers: [
-      { text: "Karena Pancasila adalah ideologi paling tua di dunia", correct: false },
-      { text: "Karena Pancasila merupakan warisan leluhur yang tidak boleh diubah dalam kondisi apapun", correct: false },
-      { text: "Karena Pancasila digali dari nilai-nilai luhur bangsa Indonesia sendiri sehingga sesuai dengan karakter dan keberagaman bangsa", correct: true },
-      { text: "Karena negara-negara asing mengakui Pancasila sebagai ideologi terbaik di dunia", correct: false }
+      { text: "Terlambat bicara", correct: true },
+      { text: "Bulimia", correct: false },
+      { text: "Aphasia", correct: false },
+      { text: "Gagap", correct: false }
+    ],
+    difficulty: "sedang"
+  },
+  {
+    question: "Kondisi berbicara yang ditandai pengulangan suara atau suku kata di awal dan sering terhenti disebut ...",
+    answers: [
+      { text: "Aphasia", correct: false },
+      { text: "Terlambat bicara", correct: false },
+      { text: "Gagap", correct: true },
+      { text: "Mutisme", correct: false }
+    ],
+    difficulty: "mudah"
+  },
+  {
+    question: "Kerusakan pada area Broca di otak menyebabkan penderita aphasia ...",
+    answers: [
+      { text: "Tidak mampu mendengar sama sekali", correct: false },
+      { text: "Berbicara lancar tetapi tidak dapat dipahami", correct: false },
+      { text: "Mengulang suku kata di awal kalimat", correct: false },
+      { text: "Kesulitan menghasilkan kata-kata yang tepat", correct: true }
     ],
     difficulty: "susah"
   },
   {
-    question: "Perhatikan pernyataan berikut!\n(1) Mengadakan dialog antar kelompok yang berkonflik\n(2) Menghakimi kelompok yang dianggap bersalah secara sepihak\n(3) Menguatkan rasa persatuan melalui kegiatan bersama\n(4) Melibatkan mediator yang dipercaya semua pihak\n(5) Menyebarkan informasi yang memperkeruh suasana\n\nLangkah yang TEPAT untuk menyelesaikan konflik sosial berbasis SARA adalah ...",
+    question: "Upaya guru untuk mengembangkan bahasa peserta didik yang paling sesuai dengan implikasi perkembangan bahasa adalah ...",
     answers: [
-      { text: "1, 2, dan 3", correct: false },
-      { text: "2, 3, dan 5", correct: false },
-      { text: "1, 3, dan 4", correct: true },
-      { text: "3, 4, dan 5", correct: false }
+      { text: "Melarang siswa bercakap-cakap agar kelas tertib", correct: false },
+      { text: "Menghindari penggunaan bahasa daerah dan bahasa gaul secara total tanpa memahami konteksnya", correct: false },
+      { text: "Meningkatkan kemampuan membaca, menulis, mendengarkan, dan memberi kesempatan bercakap-cakap", correct: true },
+      { text: "Hanya fokus pada kemampuan menulis", correct: false }
     ],
-    difficulty: "susah"
+    difficulty: "sedang"
   },
   {
-    question: "Mengapa nilai-nilai demokrasi Pancasila dianggap lebih sesuai untuk Indonesia dibandingkan demokrasi liberal murni?",
+    question: "Seorang guru mengetahui siswanya memakai bahasa gaul dan bahasa sandi dalam pergaulan. Sikap guru yang paling tepat adalah ...",
     answers: [
-      { text: "Karena demokrasi liberal berasal dari Barat dan tidak pernah berhasil diterapkan di Asia", correct: false },
-      { text: "Karena demokrasi Pancasila mengutamakan musyawarah mufakat yang sesuai dengan karakter bangsa Indonesia yang kekeluargaan", correct: true },
-      { text: "Karena demokrasi liberal tidak memiliki dasar hukum yang jelas", correct: false },
-      { text: "Karena dalam demokrasi Pancasila, rakyat tidak perlu terlibat dalam pengambilan keputusan", correct: false }
+      { text: "Menghukum semua siswa yang menggunakan bahasa gaul", correct: false },
+      { text: "Memahami istilah yang digunakan agar dapat mengenali pesan dan mengarahkan penggunaan bahasa yang tepat", correct: true },
+      { text: "Ikut menggunakannya dalam pembelajaran formal", correct: false },
+      { text: "Mengabaikannya karena tidak berkaitan dengan perkembangan siswa", correct: false }
     ],
     difficulty: "susah"
   }
